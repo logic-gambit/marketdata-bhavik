@@ -26,7 +26,11 @@ const ReplayFileReader = require('./common/ReplayFileReader'),
 
 		switch (type) {
 			case 'LOAD': {
-				const filename = matches[2] || null;
+				let filename = matches[2] || null;
+
+				if (filename) {
+					filename = filename.replace(/(\.{2}|\/|\\)/g, '');  // Remove ../ and path separators
+				}
 
 				console.log(`Command [ ${type} ], operand [ ${filename} ]`);
 

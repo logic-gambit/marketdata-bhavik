@@ -1,0 +1,20 @@
+{
+  "finding_index": 1,
+  "verdict": "Needs Review",
+  "gates": {
+    "source": "fail",
+    "sink": "fail",
+    "missing_control": "fail"
+  },
+  "root_cause": "",
+  "changes": [],
+  "remaining_risks": [],
+  "recommendations": [],
+  "summary": "could not parse agent response as JSON: no JSON object found in response",
+  "severity": "CRITICAL",
+  "title": "JWT token not verified before use",
+  "file": "lib/connection/Connection.js:941-966",
+  "mode": "fix",
+  "generated": "2026-10-21T16:10:24.379006+00:00",
+  "diff_captured": false
+}

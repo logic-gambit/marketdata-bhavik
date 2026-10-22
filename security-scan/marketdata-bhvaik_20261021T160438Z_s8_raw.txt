@@ -1,0 +1,63 @@
+```json
+{
+  "summary": "The system mainly suffers from high-severity vulnerabilities related to unauthorized access and manipulation through multiple path traversal and unsanitized input handling vulnerabilities. These issues, when chained, could allow attackers to read arbitrary server files, inject malicious code via unvalidated JWTs, and execute harmful scripts. Race conditions also pose significant integrity risks in concurrent environments.",
+  "ranked_findings": [
+    {
+      "index": 0,
+      "severity": "critical",
+      "exploitability_notes": "Allows arbitrary file reading due to lack of path validation. No design controls mitigate this."
+    },
+    {
+      "index": 1,
+      "severity": "critical",
+      "exploitability_notes": "Enables unauthorized file access through path traversal, and its reachability ties it closely to FINDING 0."
+    },
+    {
+      "index": 2,
+      "severity": "critical",
+      "exploitability_notes": "JWTs are used without verification, allowing remote attackers unauthorized access as any user."
+    },
+    {
+      "index": 6,
+      "severity": "high",
+      "exploitability_notes": "Direct WebSocket message handling without sanitization allows for possible crafted message attacks."
+    },
+    {
+      "index": 5,
+      "severity": "high",
+      "exploitability_notes": "XML inputs are not validated, leading to possible XML-based attacks. No input controls present."
+    },
+    {
+      "index": 9,
+      "severity": "high",
+      "exploitability_notes": "Race condition potentially corrupts transaction data, no synchronization primitives used to mitigate this."
+    },
+    {
+      "index": 4,
+      "severity": "medium",
+      "exploitability_notes": "Leakage of sensitive data in URLs can be serious but relies on external interception."
+    },
+    {
+      "index": 7,
+      "severity": "medium",
+      "exploitability_notes": "Concurrency issues can lead to data inconsistency and DoS within the app's file operations."
+    }
+  ],
+  "chains": [
+    {
+      "title": "Path Traversal -> JWT Injection -> Unauthorized Access",
+      "steps": [0, 1, 2],
+      "severity": "critical",
+      "blocked_by_controls": [],
+      "narrative": "The path traversal vulnerabilities (FINDING 0, 1) allow reading of JWT secret or other important files, leveraging FINDING 2 to use the unverified JWT for unauthorized access."
+    },
+    {
+      "title": "WebSocket Injection -> Logic Flaw in XML Parsing",
+      "steps": [6, 5],
+      "severity": "high",
+      "blocked_by_controls": [],
+      "narrative": "Unsanitized WebSocket input (FINDING 6) can supply malicious XML data exploiting the XML parsing logic flaw (FINDING 5) for further exploitation."
+    }
+  ]
+}
+```
