@@ -6,6 +6,8 @@ const ReplayFileReader = require('./common/ReplayFileReader'),
 (() => {
 	'use strict';
 
+	const { Mutex } = require('async-mutex');
+	const fileReaderLock = new Mutex();
 	let fileReader = null;
 	let heartbeatInterval = null;
 
