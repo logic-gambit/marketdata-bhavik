@@ -1,0 +1,1887 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "serialNumber": "urn:uuid:1c72210a-f38f-4685-b07c-014befd2899f",
+  "metadata": {
+    "timestamp": "2026-10-21T16:05:05.863015+00:00",
+    "tools": [
+      {
+        "vendor": "Visa",
+        "name": "gambitsca",
+        "version": "1.2.0",
+        "externalReferences": [
+          {
+            "type": "website",
+            "url": "https://github.com/visa/visa-vulnerability-agentic-harness"
+          }
+        ]
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "pkg:gambitsca/marketdata-bhvaik@SCAN",
+      "name": "marketdata-bhvaik"
+    },
+    "properties": [
+      {
+        "name": "gambitsca:scanLayers",
+        "value": "OSV.dev, pip-audit, Trivy"
+      },
+      {
+        "name": "gambitsca:totalPackages",
+        "value": "24"
+      },
+      {
+        "name": "gambitsca:totalVulnerabilities",
+        "value": "45"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/@barchart/common-js@4.33.0",
+      "name": "@barchart/common-js",
+      "version": "4.33.0",
+      "purl": "pkg:npm/@barchart/common-js@4.33.0",
+      "supplier": {
+        "name": "npm Registry",
+        "url": [
+          "https://registry.npmjs.org"
+        ]
+      },
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://www.npmjs.com/package/@barchart/common-js/v/4.33.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "gambitsca:ecosystem",
+          "value": "npm"
+        },
+        {
+          "name": "gambitsca:sourceFile",
+          "value": "/Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik/package.json"
+        },
+        {
+          "name": "gambitsca:depType",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/@xmldom/xmldom@0.8.4",
+      "name": "@xmldom/xmldom",
+      "version": "0.8.4",
+      "purl": "pkg:npm/@xmldom/xmldom@0.8.4",
+      "supplier": {
+        "name": "npm Registry",
+        "url": [
+          "https://registry.npmjs.org"
+        ]
+      },
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://www.npmjs.com/package/@xmldom/xmldom/v/0.8.4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "gambitsca:ecosystem",
+          "value": "npm"
+        },
+        {
+          "name": "gambitsca:sourceFile",
+          "value": "/Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik/package.json"
+        },
+        {
+          "name": "gambitsca:depType",
+          "value": "direct"
+        },
+        {
+          "name": "gambitsca:knownVulns",
+          "value": "CVE-2026-83608, CVE-2026-41673, CVE-2026-83605, CVE-2026-83613, CVE-2026-83614, CVE-2026-83615, CVE-2026-83616, CVE-2026-41674, CVE-2026-41672, CVE-2026-83607, CVE-2026-34601, CVE-2026-83619, CVE-2026-41675, CVE-2026-83610, CVE-2026-83611"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/axios@0.21.1",
+      "name": "axios",
+      "version": "0.21.1",
+      "purl": "pkg:npm/axios@0.21.1",
+      "supplier": {
+        "name": "npm Registry",
+        "url": [
+          "https://registry.npmjs.org"
+        ]
+      },
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://www.npmjs.com/package/axios/v/0.21.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "gambitsca:ecosystem",
+          "value": "npm"
+        },
+        {
+          "name": "gambitsca:sourceFile",
+          "value": "/Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik/package.json"
+        },
+        {
+          "name": "gambitsca:depType",
+          "value": "direct"
+        },
+        {
+          "name": "gambitsca:knownVulns",
+          "value": "CVE-2026-44495, CVE-2026-25639, CVE-2026-42035, CVE-2021-3749, CVE-2026-44496, CVE-2026-44486, CVE-2025-27152, CVE-2026-44487, CVE-2026-42033, CVE-2026-44492, CVE-2026-42043, CVE-2025-62718, CVE-2026-42034, CVE-2026-42039, CVE-2026-67319, CVE-2026-44490, CVE-2026-40175, CVE-2026-42038, CVE-2026-67316, CVE-2026-42036, CVE-2026-42041, CVE-2023-45857, CVE-2026-42042, CVE-2026-42040"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/ws@7.4.6",
+      "name": "ws",
+      "version": "7.4.6",
+      "purl": "pkg:npm/ws@7.4.6",
+      "supplier": {
+        "name": "npm Registry",
+        "url": [
+          "https://registry.npmjs.org"
+        ]
+      },
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://www.npmjs.com/package/ws/v/7.4.6"
+        }
+      ],
+      "properties": [
+        {
+          "name": "gambitsca:ecosystem",
+          "value": "npm"
+        },
+        {
+          "name": "gambitsca:sourceFile",
+          "value": "/Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik/package.json"
+        },
+        {
+          "name": "gambitsca:depType",
+          "value": "direct"
+        },
+        {
+          "name": "gambitsca:knownVulns",
+          "value": "CVE-2024-37890, CVE-2026-48779"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/@babel/core@7.6.2",
+      "name": "@babel/core",
+      "version": "7.6.2",
+      "purl": "pkg:npm/@babel/core@7.6.2",
+      "supplier": {
+        "name": "npm Registry",
+        "url": [
+          "https://registry.npmjs.org"
+        ]
+      },
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://www.npmjs.com/package/@babel/core/v/7.6.2"
+        }
+      ],
+      "properties": [
+        {
+          "name": "gambitsca:ecosystem",
+          "value": "npm"
+        },
+        {
+          "name": "gambitsca:sourceFile",
+          "value": "/Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik/package.json"
+        },
+        {
+          "name": "gambitsca:depType",
+          "value": "direct"
+        },
+        {
+          "name": "gambitsca:knownVulns",
+          "value": "CVE-2026-49356"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/aws-sdk@2.546.0",
+      "name": "aws-sdk",
+      "version": "2.546.0",
+      "purl": "pkg:npm/aws-sdk@2.546.0",
+      "supplier": {
+        "name": "npm Registry",
+        "url": [
+          "https://registry.npmjs.org"
+        ]
+      },
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://www.npmjs.com/package/aws-sdk/v/2.546.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "gambitsca:ecosystem",
+          "value": "npm"
+        },
+        {
+          "name": "gambitsca:sourceFile",
+          "value": "/Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik/package.json"
+        },
+        {
+          "name": "gambitsca:depType",
+          "value": "direct"
+        },
+        {
+          "name": "gambitsca:knownVulns",
+          "value": "CVE-2020-28472, GHSA-j965-2qgj-vjmq"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/babelify@10.0.0",
+      "name": "babelify",
+      "version": "10.0.0",
+      "purl": "pkg:npm/babelify@10.0.0",
+      "supplier": {
+        "name": "npm Registry",
+        "url": [
+          "https://registry.npmjs.org"
+        ]
+      },
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://www.npmjs.com/package/babelify/v/10.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "gambitsca:ecosystem",
+          "value": "npm"
+        },
+        {
+          "name": "gambitsca:sourceFile",
+          "value": "/Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik/package.json"
+        },
+        {
+          "name": "gambitsca:depType",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/browserify@16.5.0",
+      "name": "browserify",
+      "version": "16.5.0",
+      "purl": "pkg:npm/browserify@16.5.0",
+      "supplier": {
+        "name": "npm Registry",
+        "url": [
+          "https://registry.npmjs.org"
+        ]
+      },
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://www.npmjs.com/package/browserify/v/16.5.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "gambitsca:ecosystem",
+          "value": "npm"
+        },
+        {
+          "name": "gambitsca:sourceFile",
+          "value": "/Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik/package.json"
+        },
+        {
+          "name": "gambitsca:depType",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/git-get-status@1.0.5",
+      "name": "git-get-status",
+      "version": "1.0.5",
+      "purl": "pkg:npm/git-get-status@1.0.5",
+      "supplier": {
+        "name": "npm Registry",
+        "url": [
+          "https://registry.npmjs.org"
+        ]
+      },
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://www.npmjs.com/package/git-get-status/v/1.0.5"
+        }
+      ],
+      "properties": [
+        {
+          "name": "gambitsca:ecosystem",
+          "value": "npm"
+        },
+        {
+          "name": "gambitsca:sourceFile",
+          "value": "/Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik/package.json"
+        },
+        {
+          "name": "gambitsca:depType",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/glob@6.0.1",
+      "name": "glob",
+      "version": "6.0.1",
+      "purl": "pkg:npm/glob@6.0.1",
+      "supplier": {
+        "name": "npm Registry",
+        "url": [
+          "https://registry.npmjs.org"
+        ]
+      },
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://www.npmjs.com/package/glob/v/6.0.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "gambitsca:ecosystem",
+          "value": "npm"
+        },
+        {
+          "name": "gambitsca:sourceFile",
+          "value": "/Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik/package.json"
+        },
+        {
+          "name": "gambitsca:depType",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/gulp@4.0.2",
+      "name": "gulp",
+      "version": "4.0.2",
+      "purl": "pkg:npm/gulp@4.0.2",
+      "supplier": {
+        "name": "npm Registry",
+        "url": [
+          "https://registry.npmjs.org"
+        ]
+      },
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://www.npmjs.com/package/gulp/v/4.0.2"
+        }
+      ],
+      "properties": [
+        {
+          "name": "gambitsca:ecosystem",
+          "value": "npm"
+        },
+        {
+          "name": "gambitsca:sourceFile",
+          "value": "/Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik/package.json"
+        },
+        {
+          "name": "gambitsca:depType",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/gulp-awspublish@4.0.0",
+      "name": "gulp-awspublish",
+      "version": "4.0.0",
+      "purl": "pkg:npm/gulp-awspublish@4.0.0",
+      "supplier": {
+        "name": "npm Registry",
+        "url": [
+          "https://registry.npmjs.org"
+        ]
+      },
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://www.npmjs.com/package/gulp-awspublish/v/4.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "gambitsca:ecosystem",
+          "value": "npm"
+        },
+        {
+          "name": "gambitsca:sourceFile",
+          "value": "/Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik/package.json"
+        },
+        {
+          "name": "gambitsca:depType",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/gulp-git@2.5.1",
+      "name": "gulp-git",
+      "version": "2.5.1",
+      "purl": "pkg:npm/gulp-git@2.5.1",
+      "supplier": {
+        "name": "npm Registry",
+        "url": [
+          "https://registry.npmjs.org"
+        ]
+      },
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://www.npmjs.com/package/gulp-git/v/2.5.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "gambitsca:ecosystem",
+          "value": "npm"
+        },
+        {
+          "name": "gambitsca:sourceFile",
+          "value": "/Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik/package.json"
+        },
+        {
+          "name": "gambitsca:depType",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/gulp-jasmine@2.2.1",
+      "name": "gulp-jasmine",
+      "version": "2.2.1",
+      "purl": "pkg:npm/gulp-jasmine@2.2.1",
+      "supplier": {
+        "name": "npm Registry",
+        "url": [
+          "https://registry.npmjs.org"
+        ]
+      },
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://www.npmjs.com/package/gulp-jasmine/v/2.2.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "gambitsca:ecosystem",
+          "value": "npm"
+        },
+        {
+          "name": "gambitsca:sourceFile",
+          "value": "/Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik/package.json"
+        },
+        {
+          "name": "gambitsca:depType",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/gulp-jshint@2.1.0",
+      "name": "gulp-jshint",
+      "version": "2.1.0",
+      "purl": "pkg:npm/gulp-jshint@2.1.0",
+      "supplier": {
+        "name": "npm Registry",
+        "url": [
+          "https://registry.npmjs.org"
+        ]
+      },
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://www.npmjs.com/package/gulp-jshint/v/2.1.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "gambitsca:ecosystem",
+          "value": "npm"
+        },
+        {
+          "name": "gambitsca:sourceFile",
+          "value": "/Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik/package.json"
+        },
+        {
+          "name": "gambitsca:depType",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/gulp-prompt@1.2.0",
+      "name": "gulp-prompt",
+      "version": "1.2.0",
+      "purl": "pkg:npm/gulp-prompt@1.2.0",
+      "supplier": {
+        "name": "npm Registry",
+        "url": [
+          "https://registry.npmjs.org"
+        ]
+      },
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://www.npmjs.com/package/gulp-prompt/v/1.2.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "gambitsca:ecosystem",
+          "value": "npm"
+        },
+        {
+          "name": "gambitsca:sourceFile",
+          "value": "/Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik/package.json"
+        },
+        {
+          "name": "gambitsca:depType",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/gulp-rename@1.4.0",
+      "name": "gulp-rename",
+      "version": "1.4.0",
+      "purl": "pkg:npm/gulp-rename@1.4.0",
+      "supplier": {
+        "name": "npm Registry",
+        "url": [
+          "https://registry.npmjs.org"
+        ]
+      },
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://www.npmjs.com/package/gulp-rename/v/1.4.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "gambitsca:ecosystem",
+          "value": "npm"
+        },
+        {
+          "name": "gambitsca:sourceFile",
+          "value": "/Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik/package.json"
+        },
+        {
+          "name": "gambitsca:depType",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/gulp-replace@0.5.4",
+      "name": "gulp-replace",
+      "version": "0.5.4",
+      "purl": "pkg:npm/gulp-replace@0.5.4",
+      "supplier": {
+        "name": "npm Registry",
+        "url": [
+          "https://registry.npmjs.org"
+        ]
+      },
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://www.npmjs.com/package/gulp-replace/v/0.5.4"
+        }
+      ],
+      "properties": [
+        {
+          "name": "gambitsca:ecosystem",
+          "value": "npm"
+        },
+        {
+          "name": "gambitsca:sourceFile",
+          "value": "/Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik/package.json"
+        },
+        {
+          "name": "gambitsca:depType",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/jshint@2.10.3",
+      "name": "jshint",
+      "version": "2.10.3",
+      "purl": "pkg:npm/jshint@2.10.3",
+      "supplier": {
+        "name": "npm Registry",
+        "url": [
+          "https://registry.npmjs.org"
+        ]
+      },
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://www.npmjs.com/package/jshint/v/2.10.3"
+        }
+      ],
+      "properties": [
+        {
+          "name": "gambitsca:ecosystem",
+          "value": "npm"
+        },
+        {
+          "name": "gambitsca:sourceFile",
+          "value": "/Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik/package.json"
+        },
+        {
+          "name": "gambitsca:depType",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/log4js@6.4.1",
+      "name": "log4js",
+      "version": "6.4.1",
+      "purl": "pkg:npm/log4js@6.4.1",
+      "supplier": {
+        "name": "npm Registry",
+        "url": [
+          "https://registry.npmjs.org"
+        ]
+      },
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://www.npmjs.com/package/log4js/v/6.4.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "gambitsca:ecosystem",
+          "value": "npm"
+        },
+        {
+          "name": "gambitsca:sourceFile",
+          "value": "/Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik/package.json"
+        },
+        {
+          "name": "gambitsca:depType",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/merge-stream@2.0.0",
+      "name": "merge-stream",
+      "version": "2.0.0",
+      "purl": "pkg:npm/merge-stream@2.0.0",
+      "supplier": {
+        "name": "npm Registry",
+        "url": [
+          "https://registry.npmjs.org"
+        ]
+      },
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://www.npmjs.com/package/merge-stream/v/2.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "gambitsca:ecosystem",
+          "value": "npm"
+        },
+        {
+          "name": "gambitsca:sourceFile",
+          "value": "/Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik/package.json"
+        },
+        {
+          "name": "gambitsca:depType",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/uuid@9.0.1",
+      "name": "uuid",
+      "version": "9.0.1",
+      "purl": "pkg:npm/uuid@9.0.1",
+      "supplier": {
+        "name": "npm Registry",
+        "url": [
+          "https://registry.npmjs.org"
+        ]
+      },
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://www.npmjs.com/package/uuid/v/9.0.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "gambitsca:ecosystem",
+          "value": "npm"
+        },
+        {
+          "name": "gambitsca:sourceFile",
+          "value": "/Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik/package.json"
+        },
+        {
+          "name": "gambitsca:depType",
+          "value": "direct"
+        },
+        {
+          "name": "gambitsca:knownVulns",
+          "value": "CVE-2026-41907"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/vinyl-buffer@1.0.1",
+      "name": "vinyl-buffer",
+      "version": "1.0.1",
+      "purl": "pkg:npm/vinyl-buffer@1.0.1",
+      "supplier": {
+        "name": "npm Registry",
+        "url": [
+          "https://registry.npmjs.org"
+        ]
+      },
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://www.npmjs.com/package/vinyl-buffer/v/1.0.1"
+        }
+      ],
+      "properties": [
+        {
+          "name": "gambitsca:ecosystem",
+          "value": "npm"
+        },
+        {
+          "name": "gambitsca:sourceFile",
+          "value": "/Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik/package.json"
+        },
+        {
+          "name": "gambitsca:depType",
+          "value": "direct"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:npm/vinyl-source-stream@2.0.0",
+      "name": "vinyl-source-stream",
+      "version": "2.0.0",
+      "purl": "pkg:npm/vinyl-source-stream@2.0.0",
+      "supplier": {
+        "name": "npm Registry",
+        "url": [
+          "https://registry.npmjs.org"
+        ]
+      },
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://www.npmjs.com/package/vinyl-source-stream/v/2.0.0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "gambitsca:ecosystem",
+          "value": "npm"
+        },
+        {
+          "name": "gambitsca:sourceFile",
+          "value": "/Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik/package.json"
+        },
+        {
+          "name": "gambitsca:depType",
+          "value": "direct"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:gambitsca/marketdata-bhvaik@SCAN",
+      "dependsOn": [
+        "pkg:npm/@barchart/common-js@4.33.0",
+        "pkg:npm/@xmldom/xmldom@0.8.4",
+        "pkg:npm/axios@0.21.1",
+        "pkg:npm/ws@7.4.6",
+        "pkg:npm/@babel/core@7.6.2",
+        "pkg:npm/aws-sdk@2.546.0",
+        "pkg:npm/babelify@10.0.0",
+        "pkg:npm/browserify@16.5.0",
+        "pkg:npm/git-get-status@1.0.5",
+        "pkg:npm/glob@6.0.1",
+        "pkg:npm/gulp@4.0.2",
+        "pkg:npm/gulp-awspublish@4.0.0",
+        "pkg:npm/gulp-git@2.5.1",
+        "pkg:npm/gulp-jasmine@2.2.1",
+        "pkg:npm/gulp-jshint@2.1.0",
+        "pkg:npm/gulp-prompt@1.2.0",
+        "pkg:npm/gulp-rename@1.4.0",
+        "pkg:npm/gulp-replace@0.5.4",
+        "pkg:npm/jshint@2.10.3",
+        "pkg:npm/log4js@6.4.1",
+        "pkg:npm/merge-stream@2.0.0",
+        "pkg:npm/uuid@9.0.1",
+        "pkg:npm/vinyl-buffer@1.0.1",
+        "pkg:npm/vinyl-source-stream@2.0.0"
+      ]
+    }
+  ],
+  "vulnerabilities": [
+    {
+      "id": "CVE-2026-83608",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/@xmldom/xmldom@0.8.4"
+        }
+      ],
+      "references": [],
+      "description": "xmldom: DocType `name` Injection Bypasses requireWellFormed",
+      "recommendation": "Upgrade to @xmldom/xmldom>=0.8.15"
+    },
+    {
+      "id": "CVE-2026-41673",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/@xmldom/xmldom@0.8.4"
+        }
+      ],
+      "references": [],
+      "description": "xmldom: Uncontrolled recursion in XML serialization leads to DoS",
+      "recommendation": "Upgrade to @xmldom/xmldom>=0.8.13"
+    },
+    {
+      "id": "CVE-2026-83605",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/@xmldom/xmldom@0.8.4"
+        }
+      ],
+      "references": [],
+      "description": "xmldom: Attribute name injection via setAttribute() bypasses requireWellFormed",
+      "recommendation": "Upgrade to @xmldom/xmldom>=0.9.11"
+    },
+    {
+      "id": "CVE-2026-83613",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/@xmldom/xmldom@0.8.4"
+        }
+      ],
+      "references": [],
+      "description": "xmldom: Quadratic-time attribute deduplication",
+      "recommendation": "Upgrade to @xmldom/xmldom>=0.8.15"
+    },
+    {
+      "id": "CVE-2026-83614",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/@xmldom/xmldom@0.8.4"
+        }
+      ],
+      "references": [],
+      "description": "xmldom: Quadratic-time parsing via the malformed-input recovery path \u2014 `parseElementStartPart` re-scan and `normalize()` adjacent-text merge",
+      "recommendation": "Upgrade to @xmldom/xmldom>=0.8.15"
+    },
+    {
+      "id": "CVE-2026-83615",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/@xmldom/xmldom@0.8.4"
+        }
+      ],
+      "references": [],
+      "description": "xmldom: Quadratic-memory consumption",
+      "recommendation": "Upgrade to @xmldom/xmldom>=0.8.15"
+    },
+    {
+      "id": "CVE-2026-83616",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/@xmldom/xmldom@0.8.4"
+        }
+      ],
+      "references": [],
+      "description": "xmldom: Processing Instruction Target Injection Bypasses requireWellFormed",
+      "recommendation": "Upgrade to @xmldom/xmldom>=0.8.15"
+    },
+    {
+      "id": "CVE-2026-41674",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/@xmldom/xmldom@0.8.4"
+        }
+      ],
+      "references": [],
+      "description": "xmldom has XML injection through unvalidated DocumentType serialization",
+      "recommendation": "Upgrade to @xmldom/xmldom>=0.8.13"
+    },
+    {
+      "id": "CVE-2026-41672",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/@xmldom/xmldom@0.8.4"
+        }
+      ],
+      "references": [],
+      "description": "xmldom has XML node injection through unvalidated comment serialization",
+      "recommendation": "Upgrade to @xmldom/xmldom>=0.8.13"
+    },
+    {
+      "id": "CVE-2026-83607",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/@xmldom/xmldom@0.8.4"
+        }
+      ],
+      "references": [],
+      "description": "xmldom: Element name injection via createElement() bypasses requireWellFormed",
+      "recommendation": "Upgrade to @xmldom/xmldom>=0.9.11"
+    },
+    {
+      "id": "CVE-2026-34601",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/@xmldom/xmldom@0.8.4"
+        }
+      ],
+      "references": [],
+      "description": "xmldom: XML injection via unsafe CDATA serialization allows attacker-controlled markup insertion",
+      "recommendation": "Upgrade to @xmldom/xmldom>=0.8.12"
+    },
+    {
+      "id": "CVE-2026-83619",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/@xmldom/xmldom@0.8.4"
+        }
+      ],
+      "references": [],
+      "description": "xmldom: End-tag Whitespace-Trim Regex ReDoS \u2014 quadratic backtracking in the 0.8.x end-tag parser",
+      "recommendation": "Upgrade to @xmldom/xmldom>=0.8.15"
+    },
+    {
+      "id": "CVE-2026-41675",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/@xmldom/xmldom@0.8.4"
+        }
+      ],
+      "references": [],
+      "description": "xmldom has XML node injection through unvalidated processing instruction serialization",
+      "recommendation": "Upgrade to @xmldom/xmldom>=0.8.13"
+    },
+    {
+      "id": "CVE-2026-44495",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:L"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/axios@0.21.1"
+        }
+      ],
+      "references": [],
+      "description": "axios Vulnerable to Credential Theft and Response Hijacking via Prototype Pollution Gadget in Config Merge",
+      "recommendation": "Upgrade to axios>=1.15.2"
+    },
+    {
+      "id": "CVE-2026-25639",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/axios@0.21.1"
+        }
+      ],
+      "references": [],
+      "description": "Axios is Vulnerable to Denial of Service via __proto__ Key in mergeConfig",
+      "recommendation": "Upgrade to axios>=1.13.5"
+    },
+    {
+      "id": "CVE-2026-42035",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/axios@0.21.1"
+        }
+      ],
+      "references": [],
+      "description": "Axios: Header Injection via Prototype Pollution",
+      "recommendation": "Upgrade to axios>=1.15.1"
+    },
+    {
+      "id": "CVE-2021-3749",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/axios@0.21.1"
+        }
+      ],
+      "references": [],
+      "description": "axios Inefficient Regular Expression Complexity vulnerability",
+      "recommendation": "Upgrade to axios>=0.21.2"
+    },
+    {
+      "id": "CVE-2026-44496",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/axios@0.21.1"
+        }
+      ],
+      "references": [],
+      "description": "Axios: Regular Expression Denial of Service (ReDoS) via Cookie Name Injection",
+      "recommendation": "Upgrade to axios>=1.16.0"
+    },
+    {
+      "id": "CVE-2026-44486",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/axios@0.21.1"
+        }
+      ],
+      "references": [],
+      "description": "Axios: Proxy-Authorization header leaks to redirect target when proxy is re-evaluated to direct connection",
+      "recommendation": "Upgrade to axios>=1.16.0"
+    },
+    {
+      "id": "CVE-2025-27152",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:P"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/axios@0.21.1"
+        }
+      ],
+      "references": [],
+      "description": "axios Requests Vulnerable To Possible SSRF and Credential Leakage via Absolute URL",
+      "recommendation": "Upgrade to axios>=1.8.2"
+    },
+    {
+      "id": "CVE-2026-44487",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/axios@0.21.1"
+        }
+      ],
+      "references": [],
+      "description": "Axios: Proxy-Authorization Credential Leak to Origin Server Across HTTP-to-HTTPS Redirect in Axios Node.js HTTP Adapter",
+      "recommendation": "Upgrade to axios>=1.16.0"
+    },
+    {
+      "id": "CVE-2026-42033",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/axios@0.21.1"
+        }
+      ],
+      "references": [],
+      "description": "Axios: Prototype Pollution Gadgets - Response Tampering, Data Exfiltration, and Request Hijacking",
+      "recommendation": "Upgrade to axios>=1.15.1"
+    },
+    {
+      "id": "CVE-2026-44492",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/axios@0.21.1"
+        }
+      ],
+      "references": [],
+      "description": "axios's shouldBypassProxy does not recognize IPv4-mapped IPv6 addresses, allowing NO_PROXY bypass (incomplete fix for CVE-2025-62718)",
+      "recommendation": "Upgrade to axios>=1.16.0"
+    },
+    {
+      "id": "CVE-2026-42043",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/axios@0.21.1"
+        }
+      ],
+      "references": [],
+      "description": "Axios: Incomplete Fix for CVE-2025-62718 \u2014 NO_PROXY Protection Bypassed via RFC 1122 Loopback Subnet (127.0.0.0/8) in Axios 1.15.0",
+      "recommendation": "Upgrade to axios>=1.15.1"
+    },
+    {
+      "id": "CVE-2024-37890",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/ws@7.4.6"
+        }
+      ],
+      "references": [],
+      "description": "ws affected by a DoS when handling a request with many HTTP headers",
+      "recommendation": "Upgrade to ws>=5.2.4"
+    },
+    {
+      "id": "CVE-2026-48779",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/ws@7.4.6"
+        }
+      ],
+      "references": [],
+      "description": "ws: Memory exhaustion DoS from tiny fragments and data chunks",
+      "recommendation": "Upgrade to ws>=5.2.5"
+    },
+    {
+      "id": "CVE-2020-28472",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "high",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/aws-sdk@2.546.0"
+        }
+      ],
+      "references": [],
+      "description": "Prototype Pollution via file load in aws-sdk and @aws-sdk/shared-ini-file-loader",
+      "recommendation": "Upgrade to aws-sdk>=2.814.0"
+    },
+    {
+      "id": "CVE-2026-83610",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/@xmldom/xmldom@0.8.4"
+        }
+      ],
+      "references": [],
+      "description": "xmldom: XML fragment injection via invalid EntityReference.nodeName during requireWellFormed serialization",
+      "recommendation": "Upgrade to @xmldom/xmldom>=0.8.15"
+    },
+    {
+      "id": "CVE-2026-83611",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/@xmldom/xmldom@0.8.4"
+        }
+      ],
+      "references": [],
+      "description": "xmldom: Parser silently accepts a not-well-formed end tag whose name is followed by a line break and trailing content",
+      "recommendation": "Upgrade to @xmldom/xmldom>=0.8.15"
+    },
+    {
+      "id": "CVE-2025-62718",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/axios@0.21.1"
+        }
+      ],
+      "references": [],
+      "description": "Axios has a NO_PROXY Hostname Normalization Bypass that Leads to SSRF",
+      "recommendation": "Upgrade to axios>=1.15.0"
+    },
+    {
+      "id": "CVE-2026-42034",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/axios@0.21.1"
+        }
+      ],
+      "references": [],
+      "description": "Axios' HTTP adapter-streamed uploads bypass maxBodyLength when maxRedirects: 0",
+      "recommendation": "Upgrade to axios>=1.15.1"
+    },
+    {
+      "id": "CVE-2026-42039",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/axios@0.21.1"
+        }
+      ],
+      "references": [],
+      "description": "Axios: unbounded recursion in toFormData causes DoS via deeply nested request data",
+      "recommendation": "Upgrade to axios>=1.15.1"
+    },
+    {
+      "id": "CVE-2026-67319",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:L/SA:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/axios@0.21.1"
+        }
+      ],
+      "references": [],
+      "description": "Axios: Nested axios option objects can consume polluted prototype values",
+      "recommendation": "Upgrade to axios>=0.33.0"
+    },
+    {
+      "id": "CVE-2026-44490",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:L"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/axios@0.21.1"
+        }
+      ],
+      "references": [],
+      "description": "axios has DoS & Header Injection via Prototype Pollution Read-Side Gadgets in axios merge functions",
+      "recommendation": "Upgrade to axios>=1.16.0"
+    },
+    {
+      "id": "CVE-2026-40175",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/axios@0.21.1"
+        }
+      ],
+      "references": [],
+      "description": "Axios has Unrestricted Cloud Metadata Exfiltration via Header Injection Chain",
+      "recommendation": "Upgrade to axios>=1.15.0"
+    },
+    {
+      "id": "CVE-2026-42038",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/axios@0.21.1"
+        }
+      ],
+      "references": [],
+      "description": "Axios: no_proxy bypass via IP alias allows SSRF",
+      "recommendation": "Upgrade to axios>=1.15.1"
+    },
+    {
+      "id": "CVE-2026-67316",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "CVSSv4",
+          "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/axios@0.21.1"
+        }
+      ],
+      "references": [],
+      "description": "Axios: Prototype pollution gadgets can alter axios request construction",
+      "recommendation": "Upgrade to axios>=1.18.0"
+    },
+    {
+      "id": "CVE-2026-42036",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/axios@0.21.1"
+        }
+      ],
+      "references": [],
+      "description": "Axios: HTTP adapter streamed responses bypass maxContentLength",
+      "recommendation": "Upgrade to axios>=1.15.1"
+    },
+    {
+      "id": "CVE-2026-42041",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/axios@0.21.1"
+        }
+      ],
+      "references": [],
+      "description": "Axios: Authentication Bypass via Prototype Pollution Gadget in `validateStatus` Merge Strategy",
+      "recommendation": "Upgrade to axios>=1.15.1"
+    },
+    {
+      "id": "CVE-2023-45857",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/axios@0.21.1"
+        }
+      ],
+      "references": [],
+      "description": "Axios Cross-Site Request Forgery Vulnerability",
+      "recommendation": "Upgrade to axios>=1.6.0"
+    },
+    {
+      "id": "CVE-2026-42042",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/axios@0.21.1"
+        }
+      ],
+      "references": [],
+      "description": "Axios: XSRF Token Cross-Origin Leakage via Prototype Pollution Gadget in `withXSRFToken` Boolean Coercion",
+      "recommendation": "Upgrade to axios>=1.15.1"
+    },
+    {
+      "id": "CVE-2026-41907",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "medium",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/uuid@9.0.1"
+        }
+      ],
+      "references": [
+        {
+          "id": "CVE-2026-41988",
+          "source": {
+            "name": "alias"
+          }
+        }
+      ],
+      "description": "uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided",
+      "recommendation": "Upgrade to uuid>=11.1.1"
+    },
+    {
+      "id": "CVE-2026-42040",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "low",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/axios@0.21.1"
+        }
+      ],
+      "references": [],
+      "description": "Axios: Null Byte Injection via Reverse-Encoding in AxiosURLSearchParams",
+      "recommendation": "Upgrade to axios>=1.15.1"
+    },
+    {
+      "id": "CVE-2026-49356",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "low",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:L/I:N/A:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/@babel/core@7.6.2"
+        }
+      ],
+      "references": [],
+      "description": "@babel/core: Arbitrary File Read via sourceMappingURL Comment",
+      "recommendation": "Upgrade to @babel/core>=8.0.0-rc.6"
+    },
+    {
+      "id": "GHSA-j965-2qgj-vjmq",
+      "source": {
+        "name": "OSV",
+        "url": ""
+      },
+      "ratings": [
+        {
+          "severity": "low",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "affects": [
+        {
+          "ref": "pkg:npm/aws-sdk@2.546.0"
+        }
+      ],
+      "description": "JavaScript SDK v2 users should add validation to the region parameter value in or migrate to v3"
+    }
+  ]
+}

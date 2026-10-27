@@ -52,7 +52,7 @@ const LoggerFactory = require('./../../lib/logging/LoggerFactory');
 	const password = process.argv[4];
 	const symbols = process.argv[5];
 
-	__logger.log(`Example: Instantiating Connection (using Node.js adapter) for [ ${username}/${password} ] @ [ ${host} ]`);
+	__logger.log(`Example: Instantiating Connection (using Node.js adapter) for [ ${username}/REDACTED ] @ [ ${host} ]`);
 
 	connection = new Connection(new EnvironmentForNode());
 

@@ -1,0 +1,929 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Agentic SAST",
+          "version": "1.2.0",
+          "rules": [
+            {
+              "id": "CWE-22: Improper Limitation of a Pathname to a Restricted Directory (Path Traversal)",
+              "name": "CWE-22: Improper Limitation of a Pathname to a Restricted Directory (Path Traversal)",
+              "shortDescription": {
+                "text": "Improper Limitation of a Pathname to a Restricted Directory (Path Traversal)"
+              }
+            },
+            {
+              "id": "CWE-94: Improper Control of Generation of Code (Code Injection)",
+              "name": "CWE-94: Improper Control of Generation of Code (Code Injection)",
+              "shortDescription": {
+                "text": "Improper Control of Generation of Code (Code Injection)"
+              }
+            },
+            {
+              "id": "CWE-711",
+              "name": "CWE-711"
+            },
+            {
+              "id": "CWE-78: Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)",
+              "name": "CWE-78: Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)",
+              "shortDescription": {
+                "text": "Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)"
+              }
+            },
+            {
+              "id": "CWE-532: Insertion of Sensitive Information into Log File",
+              "name": "CWE-532: Insertion of Sensitive Information into Log File",
+              "shortDescription": {
+                "text": "Insertion of Sensitive Information into Log File"
+              }
+            },
+            {
+              "id": "CWE-20: Improper Input Validation",
+              "name": "CWE-20: Improper Input Validation",
+              "shortDescription": {
+                "text": "Improper Input Validation"
+              }
+            },
+            {
+              "id": "other",
+              "name": "other"
+            },
+            {
+              "id": "CWE-840: Business Logic Errors",
+              "name": "CWE-840: Business Logic Errors",
+              "shortDescription": {
+                "text": "Business Logic Errors"
+              }
+            },
+            {
+              "id": "CWE-295: Improper Certificate Validation",
+              "name": "CWE-295: Improper Certificate Validation",
+              "shortDescription": {
+                "text": "Improper Certificate Validation"
+              }
+            },
+            {
+              "id": "CWE-362: Concurrent Execution using Shared Resource with Improper Synchronization (Race Condition)",
+              "name": "CWE-362: Concurrent Execution using Shared Resource with Improper Synchronization (Race Condition)",
+              "shortDescription": {
+                "text": "Concurrent Execution using Shared Resource with Improper Synchronization (Race Condition)"
+              }
+            },
+            {
+              "id": "CWE-522: Insufficiently Protected Credentials",
+              "name": "CWE-522: Insufficiently Protected Credentials",
+              "shortDescription": {
+                "text": "Insufficiently Protected Credentials"
+              }
+            },
+            {
+              "id": "CWE-79: Improper Neutralization of Input During Web Page Generation (Cross-site Scripting)",
+              "name": "CWE-79: Improper Neutralization of Input During Web Page Generation (Cross-site Scripting)",
+              "shortDescription": {
+                "text": "Improper Neutralization of Input During Web Page Generation (Cross-site Scripting)"
+              }
+            }
+          ],
+          "supportedTaxonomies": [
+            {
+              "guid": "b7c8d9e0-1f2a-3b4c-5d6e-7f8090a1b2c3"
+            }
+          ]
+        }
+      },
+      "taxonomies": [
+        {
+          "guid": "b7c8d9e0-1f2a-3b4c-5d6e-7f8090a1b2c3",
+          "name": "CWE",
+          "organization": "MITRE",
+          "shortDescription": {
+            "text": "The MITRE Common Weakness Enumeration"
+          },
+          "informationUri": "https://cwe.mitre.org/",
+          "taxa": [
+            {
+              "id": "CWE-20",
+              "helpUri": "https://cwe.mitre.org/data/definitions/20.html",
+              "name": "Improper Input Validation",
+              "shortDescription": {
+                "text": "Improper Input Validation"
+              }
+            },
+            {
+              "id": "CWE-22",
+              "helpUri": "https://cwe.mitre.org/data/definitions/22.html",
+              "name": "Improper Limitation of a Pathname to a Restricted Directory (Path Traversal)",
+              "shortDescription": {
+                "text": "Improper Limitation of a Pathname to a Restricted Directory (Path Traversal)"
+              }
+            },
+            {
+              "id": "CWE-78",
+              "helpUri": "https://cwe.mitre.org/data/definitions/78.html",
+              "name": "Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)",
+              "shortDescription": {
+                "text": "Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)"
+              }
+            },
+            {
+              "id": "CWE-79",
+              "helpUri": "https://cwe.mitre.org/data/definitions/79.html",
+              "name": "Improper Neutralization of Input During Web Page Generation (Cross-site Scripting)",
+              "shortDescription": {
+                "text": "Improper Neutralization of Input During Web Page Generation (Cross-site Scripting)"
+              }
+            },
+            {
+              "id": "CWE-94",
+              "helpUri": "https://cwe.mitre.org/data/definitions/94.html",
+              "name": "Improper Control of Generation of Code (Code Injection)",
+              "shortDescription": {
+                "text": "Improper Control of Generation of Code (Code Injection)"
+              }
+            },
+            {
+              "id": "CWE-295",
+              "helpUri": "https://cwe.mitre.org/data/definitions/295.html",
+              "name": "Improper Certificate Validation",
+              "shortDescription": {
+                "text": "Improper Certificate Validation"
+              }
+            },
+            {
+              "id": "CWE-362",
+              "helpUri": "https://cwe.mitre.org/data/definitions/362.html",
+              "name": "Concurrent Execution using Shared Resource with Improper Synchronization (Race Condition)",
+              "shortDescription": {
+                "text": "Concurrent Execution using Shared Resource with Improper Synchronization (Race Condition)"
+              }
+            },
+            {
+              "id": "CWE-522",
+              "helpUri": "https://cwe.mitre.org/data/definitions/522.html",
+              "name": "Insufficiently Protected Credentials",
+              "shortDescription": {
+                "text": "Insufficiently Protected Credentials"
+              }
+            },
+            {
+              "id": "CWE-532",
+              "helpUri": "https://cwe.mitre.org/data/definitions/532.html",
+              "name": "Insertion of Sensitive Information into Log File",
+              "shortDescription": {
+                "text": "Insertion of Sensitive Information into Log File"
+              }
+            },
+            {
+              "id": "CWE-711",
+              "helpUri": "https://cwe.mitre.org/data/definitions/711.html"
+            },
+            {
+              "id": "CWE-840",
+              "helpUri": "https://cwe.mitre.org/data/definitions/840.html",
+              "name": "Business Logic Errors",
+              "shortDescription": {
+                "text": "Business Logic Errors"
+              }
+            }
+          ]
+        }
+      ],
+      "properties": {
+        "applicationId": "",
+        "repoUri": "https://github.com/logic-gambit/marketdata-bhvaik",
+        "branch": "main",
+        "scanDegraded": false,
+        "unrankedFallback": false,
+        "scanId": "2026-10-21T13:53:10Z__marketdata-bhvaik",
+        "moduleName": "marketdata-bhvaik",
+        "durationSec": 167
+      },
+      "results": [
+        {
+          "ruleId": "CWE-22: Improper Limitation of a Pathname to a Restricted Directory (Path Traversal)",
+          "level": "error",
+          "message": {
+            "text": "Unauthenticated File Path Traversal in WebSocket Message Handler  [CVSS 7.5: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "scripts/replay/replay.js"
+                },
+                "region": {
+                  "startLine": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "https://github.com/logic-gambit/marketdata-bhvaik/blob/main/scripts/replay/replay.js#L34"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "severity": "high",
+            "security-severity": "7.5",
+            "cvssRating": "High",
+            "category": "CWE-22: Improper Limitation of a Pathname to a Restricted Directory (Path Traversal)",
+            "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+            "cwe": "CWE-22 - Improper Limitation of a Pathname to a Restricted Directory (Path Traversal)",
+            "cweId": "CWE-22",
+            "cweName": "Improper Limitation of a Pathname to a Restricted Directory (Path Traversal)",
+            "cvssScore": 7.5,
+            "offensivePriority": "P3",
+            "offensivePriorityLabel": "Internal Network / Privileged Position",
+            "offensivePriorityReason": "Internal Network / Privileged Position | *exposure unverified \u2014 no CMDB context; AV:N (network-routable; internet exposure unconfirmed)*",
+            "confidence": 0.9,
+            "description": "*1 additional call site(s) collapsed during dedup \u2014 same root cause; each location needs the same fix applied.*\n\n#### Description\nThe handleWebSocketMessage function processes messages from a WebSocket connection and executes commands such as LOAD to read log files. The filename parameter is user-controlled and used to construct a file path without proper validation or sanitization to prevent directory traversal attacks.\n\n#### Impact\nAn attacker with access to the WebSocket connection could issue a LOAD command with a path traversal input (e.g., '../../sensitive_file') to gain unauthorized access to arbitrary files on the server within the privileges of the application, leading to potential information disclosure.\n\n#### Exploit scenario\nAn attacker sends a WebSocket message like 'LOAD ../../etc/passwd' to cause the server to attempt reading a sensitive system file, potentially disclosing sensitive information.\n\n#### Preconditions\n- Attacker has access to the WebSocket connection\n\n```\nconst filename = matches[2] || null;\n...\nfileReader = ReplayFileReader.for(`./logs/${filename}`);\n```\n\n#### How to fix\nValidate and sanitize the filename to ensure it does not allow directory traversal. Consider using a path resolution library to ensure the resulting path is within an allowed directory.\n\n**Exploitability:** Unauthenticated File Path Traversal is directly exploitable without any authentication, offering potential access to sensitive file paths.\n\n#### Adversarial verification\n**Verdict:** TRUE_POSITIVE (confidence: 9/10) \u2014 User-controlled input allows directory traversal, and no sanitization is in place.\n\nThe `handleWebSocketMessage` function in `scripts/replay/replay.js` does indeed handle incoming WebSocket messages, where part of the message is used to determine the file path for loading a file. The WebSocket message format appears to be a command followed by the payload, and in the case of the \"LOAD\" command, the filename is extracted and used directly to construct a file path:\n\n```javascript\nconst filename = matches[2] || null;\nfileReader = ReplayFileReader.for(`./logs/${filename}`);\n```\n\nThere is no validation or sanitization on the `filename` parameter to prevent directory traversal attacks. An attacker with access to the WebSocket connection could send a message like `LOAD ../../etc/passwd`, allowing an attempt to read sensitive files outside the intended directory.\n\nThe source graph indicates no caller functions within the same file, but the WebSocket server is initialized with `handleWebSocketMessage` as its message handler:\n\n```javascript\nconst server = new ReplayWebSocket(8080, handleWebSocketMessage);\n```\n\nNo checks or validations foreclosing the possibility of directory traversal were found between receiving the message and forming the file path. Therefore, the finding appears to be valid.",
+            "findingId": "9899dd-finding-scripts/replay/replay.js-34",
+            "dedupRelatedLocationCount": 1,
+            "remediationCommand": "cd /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner && source /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/venv/bin/activate && export GAMBITSCA_SCAN_ID=\"2026-10-21T13:53:10Z__marketdata-bhvaik\" && gambitsca remediate --repo /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik --finding \"9899dd-finding-scripts/replay/replay.js-34\" --validate --config /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/config.yaml"
+          },
+          "taxa": [
+            {
+              "toolComponent": {
+                "name": "CWE",
+                "guid": "b7c8d9e0-1f2a-3b4c-5d6e-7f8090a1b2c3"
+              },
+              "id": "CWE-22"
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "scripts/replay/replay.js"
+                },
+                "region": {
+                  "startLine": 54,
+                  "endLine": 85
+                }
+              },
+              "message": {
+                "text": "Additional call site \u2014 collapsed during dedup; same root cause as the primary location and needs the same fix."
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "https://github.com/logic-gambit/marketdata-bhvaik/blob/main/scripts/replay/replay.js#L54"
+                }
+              ]
+            }
+          ],
+          "rank": 75.0
+        },
+        {
+          "ruleId": "CWE-94: Improper Control of Generation of Code (Code Injection)",
+          "level": "error",
+          "message": {
+            "text": "Prototype Pollution via Additional Properties  [CVSS 7.3: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/marketState/Profile.js"
+                },
+                "region": {
+                  "startLine": 128
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "https://github.com/logic-gambit/marketdata-bhvaik/blob/main/lib/marketState/Profile.js#L128"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "severity": "high",
+            "security-severity": "7.3",
+            "cvssRating": "High",
+            "category": "CWE-94: Improper Control of Generation of Code (Code Injection)",
+            "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+            "cwe": "CWE-94 - Improper Control of Generation of Code (Code Injection)",
+            "cweId": "CWE-94",
+            "cweName": "Improper Control of Generation of Code (Code Injection)",
+            "cvssScore": 7.3,
+            "offensivePriority": "P3",
+            "offensivePriorityLabel": "Internal Network / Privileged Position",
+            "offensivePriorityReason": "Internal Network / Privileged Position | *exposure unverified \u2014 no CMDB context; AV:N (network-routable; internet exposure unconfirmed)*",
+            "confidence": 0.85,
+            "description": "#### Description\nThe for-in loop in the Profile constructor directly assigns properties from the `additional` parameter to the `Profile` instance. This allows for potential prototype pollution if the `additional` object is controlled by an attacker and contains specific property names.\n\n#### Impact\nAn attacker can manipulate the `additional` object to include properties with names like `__proto__` or `constructor`, leading to unexpected behaviors or prototype pollution. This can result in serious security implications including arbitrary object property manipulation and denial of service.\n\n#### Exploit scenario\nAn attacker providing an object with '__proto__' as a key in the `additional` parameter can execute a prototype pollution attack, leading to potential alteration of prototype properties and unexpected behavior in the application.\n\n#### Preconditions\n- Attacker has control over the `additional` parameter, possibly through input that reaches the Profile constructor\n\n```\nif (typeof(additional) === 'object' && additional !== null) {\n    for (let p in additional) {\n        this[p] = additional[p];\n    }\n}\n```\n\n#### How to fix\nImplement checks to exclude keys that can lead to prototype pollution, such as `__proto__` and `constructor`, before assigning properties from the `additional` object.\n\n**Exploitability:** Prototype Pollution from an unauthenticated context potentially altering object behavior across system operations.\n\n#### Adversarial verification\n**Verdict:** TRUE_POSITIVE (confidence: 7/10) \u2014 unrestricted prototype properties can be assigned; no evidence of input sanitization.\n\nBased on the research conducted into the file `lib/marketState/Profile.js`, the `Profile` constructor does indeed assign properties from an `additional` parameter directly to the instance using a `for-in` loop without validation or filtering. This confirms the risk as stated: if an attacker controls the `additional` object, they could introduce keys like `__proto__` that lead to prototype pollution.\n\nI traced the usage of `Profile` from the `example/browser/example.js` and `scripts/replay/replay.js` files. Specifically, `scripts/replay/replay.js` has a network-accessible function `handleWebSocketMessage` that processes WebSocket messages, but there isn't a clear, direct connection established in your codebase between the message handling and the instantiation of the `Profile` class in a manner that is exploitable by users outside controlled environments.\n\nHowever, without evidence of safe barriers or controls around data passed to the `Profile` class, like schema validation, filtering out dangerous keys (e.g., `__proto__`), or a lack of central control over the `additional` object, there remains a valid risk scenario indicative of a TRUE_POSITIVE finding. Users of the library or service must ensure to handle input safely before providing it to this constructor.",
+            "findingId": "9f5929-finding-lib/marketState/Profile.js-128",
+            "remediationCommand": "cd /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner && source /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/venv/bin/activate && export GAMBITSCA_SCAN_ID=\"2026-10-21T13:53:10Z__marketdata-bhvaik\" && gambitsca remediate --repo /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik --finding \"9f5929-finding-lib/marketState/Profile.js-128\" --validate --config /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/config.yaml"
+          },
+          "taxa": [
+            {
+              "toolComponent": {
+                "name": "CWE",
+                "guid": "b7c8d9e0-1f2a-3b4c-5d6e-7f8090a1b2c3"
+              },
+              "id": "CWE-94"
+            }
+          ],
+          "rank": 73.0
+        },
+        {
+          "ruleId": "CWE-711",
+          "level": "error",
+          "message": {
+            "text": "Improper Input Validation in ProcessMessage Function  [CVSS 7.5: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/marketState/MarketState.js"
+                },
+                "region": {
+                  "startLine": 303
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "https://github.com/logic-gambit/marketdata-bhvaik/blob/main/lib/marketState/MarketState.js#L303"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "severity": "high",
+            "security-severity": "7.5",
+            "cvssRating": "High",
+            "category": "CWE-711",
+            "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+            "cwe": "CWE-711",
+            "cweId": "CWE-711",
+            "cvssScore": 7.5,
+            "offensivePriority": "P3",
+            "offensivePriorityLabel": "Internal Network / Privileged Position",
+            "offensivePriorityReason": "Internal Network / Privileged Position | *exposure unverified \u2014 no CMDB context; AV:N (network-routable; internet exposure unconfirmed)*",
+            "confidence": 0.9,
+            "description": "#### Description\nThe _processMessage function handles various types of market data messages by directly processing their contents into internal state without thorough validation. The 'message' parameter is used to update critical data structures based on its 'type' and content without any validation to ensure the 'message' object has necessary and safe values. This can lead to undefined behavior if a malformed or malicious message is processed.\n\n#### Impact\nAn attacker can control the content of 'message' which may lead to the modification of internal state or unexpected behavior in the SDK. By sending specially crafted market data messages that exploit the lack of input validation, the attacker can manipulate or pollute the internal structures such as quotes and profiles.\n\n#### Exploit scenario\nAn attacker connected to the WebSocket service can send a 'TRADE' message with a negative price, leading to an incorrect calculation of market statistics. This could be used to confuse users of the SDK or feed incorrect data into connected services relying on the SDK output.\n\n#### Preconditions\n- Attacker can send messages to the WebSocket service and impact the message process flow\n\n```\nlet symbol = message.symbol;\nif (message.type === 'TRADE') {\n    q.message = message;\n    q.tradePrice = message.tradePrice;\n    q.lastPrice = message.tradePrice;\n    if (message.tradeSize) {\n        q.tradeSize = message.tradeSize;\n        q.volume += message.tradeSize;\n    }\n    q.ticks.push({ price: q.tradePrice, size: q.tradeSize });\n    ...\n```\n\n#### How to fix\nAdd comprehensive input validation in the _processMessage function to ensure that each field in the message is both present and correctly formatted before using it to update internal state.\n\n**Exploitability:** (not ranked by chaining pass)\n\n#### Adversarial verification\n**Verdict:** TRUE_POSITIVE (confidence: 8/10) \u2014 publicly accessible WebSocket service likely allows manipulation of message content with insufficient validation\n\nThe `_processMessage` function processes WebSocket messages but does not sufficiently validate the `message` parameter contents. It directly accesses various properties like `tradePrice`, `tradeSize`, and others without enforcing constraints or checks on these values, such as ensuring they are non-negative or fall within expected ranges.\n\nThe architecture context shows that `handleWebSocketMessage` accepts incoming WebSocket messages and can call other functions in the same script. However, `_processMessage` is identified in `lib/marketState/MarketState.js` and is used internally by the architecture and the ReplayWebSocket.\n\nGiven this flow and lack of validation in `_processMessage`, an attacker who can send messages to the WebSocket service used in this SDK (as in `ReplayWebSocket`) could exploit this to insert malformed or harmful data. The WebSocket example in `scripts/replay/replay.js` suggests there are exposed endpoints or scripts that might leverage this functionality, allowing potentially unsafe inputs to reach `_processMessage`.\n\nSince the call from `ReplayWebSocket` to `handleWebSocketMessage` and thereafter possibly to `_processMessage` is unprotected by any significant validation or sanitization logic evident from the reviewed portions of these files, this makes injection of invalid or harmful data a real risk through public interfaces.",
+            "findingId": "2fc4f9-finding-lib/marketState/MarketState.js-303",
+            "remediationCommand": "cd /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner && source /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/venv/bin/activate && export GAMBITSCA_SCAN_ID=\"2026-10-21T13:53:10Z__marketdata-bhvaik\" && gambitsca remediate --repo /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik --finding \"2fc4f9-finding-lib/marketState/MarketState.js-303\" --validate --config /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/config.yaml"
+          },
+          "taxa": [
+            {
+              "toolComponent": {
+                "name": "CWE",
+                "guid": "b7c8d9e0-1f2a-3b4c-5d6e-7f8090a1b2c3"
+              },
+              "id": "CWE-711"
+            }
+          ],
+          "rank": 75.0
+        },
+        {
+          "ruleId": "CWE-78: Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)",
+          "level": "warning",
+          "message": {
+            "text": "Command Injection via hub release creation  [CVSS 5.3: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "gulpfile.js"
+                },
+                "region": {
+                  "startLine": 196
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "https://github.com/logic-gambit/marketdata-bhvaik/blob/main/gulpfile.js#L196"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "severity": "medium",
+            "security-severity": "5.3",
+            "cvssRating": "Medium",
+            "category": "CWE-78: Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)",
+            "cvssVector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+            "cwe": "CWE-78 - Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)",
+            "cweId": "CWE-78",
+            "cweName": "Improper Neutralization of Special Elements used in an OS Command (OS Command Injection)",
+            "cvssScore": 5.3,
+            "offensivePriority": "P3",
+            "offensivePriorityLabel": "Internal Network / Privileged Position",
+            "offensivePriorityReason": "Internal Network / Privileged Position | *AV:L (non-network)*",
+            "confidence": 0.9,
+            "description": "#### Description\nThe `spawn` function at line 196 constructs a command using the user-provided `path` without validation. This user input is taken from the `create-github-release` task through a prompt, and it's not sanitized or validated.\n\n#### Impact\nAn attacker could execute arbitrary commands in the host environment by providing a malicious path as input to the prompt, potentially leading to environment compromise.\n\n#### Exploit scenario\nAn attacker provides a path containing shell metacharacters, e.g., `valid_path; rm -rf /`, leading to arbitrary command execution when the release script runs.\n\n#### Preconditions\n- Attacker has ability to input or manipulate the release notes path\n- Attacker has access to or can influence the Gulp task execution\n\n```\nconst child = spawn(`hub release create -f ${path} ${version}`, { stdio: 'inherit', shell: true, });\n```\n\n#### How to fix\nSanitize the `path` input before using it in command execution, ensuring it is only a valid and safe path without any shell metacharacters. Perform validation within the `create-github-release` task at lines 190-192.\n\n**Exploitability:** Command Injection requires local access but can be leveraged if access is gained through another vector or local attack phase from a developer or release environment.\n\n#### Adversarial verification\n**Verdict:** TRUE_POSITIVE (confidence: 9/10) \u2014 The input is not sanitized and directly passed into a shell command, allowing command injection under certain circumstances.\n\nThe finding concerns potential command injection via the Gulp task `create-github-release`. The `spawn` function is used at line 196 to execute a command with user-provided input for the `path`:\n\n```javascript\nconst child = spawn(`hub release create -f ${path} ${version}`, { stdio: 'inherit', shell: true, });\n```\n\n**Call Graph Investigation**\n\n- **Task Definition**: The `create-github-release` task is defined starting at line 182. It's designed to create a GitHub release using `hub`, a command-line tool that wraps GitHub API functionality.\n  \n- **User Input**: The path is provided via a prompt to the user (lines 185-188). The user inputs the path for release notes, which is then used directly in a shell command without sanitization or validation.\n\n- **Validation**: The only check in place is a filesystem existence check using `fs.existsSync` (line 192), which only verifies that the specified path points to a legitimate file. It doesn't prevent shell metacharacters, posing a risk for command injection.\n\n**External Entry Points**\n\nThe architectural context noted potential WebSocket handlers within the project. However, there\u2019s no direct trace of any external network-based or unauthenticated entry point directly invoking the `gulp` tasks; these tasks are generally run in a development or CI/CD pipeline context by developers or automated systems, which means that the main risk is from insider threats or misconfigured environments where untrusted input might be provided.\n\n**Conclusion**\n\nThe code indeed lacks proper validation or sanitization of the path input, allowing for command injection if an attacker has the ability to provide a crafted path. \n\nHowever, given that this task is typically run in environments where user input is controlled (e.g., development machine, CI), the risk primarily hinges on insider threat scenarios or misconfigured scripting environments.",
+            "findingId": "c6b5e8-finding-gulpfile.js-196",
+            "remediationCommand": "cd /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner && source /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/venv/bin/activate && export GAMBITSCA_SCAN_ID=\"2026-10-21T13:53:10Z__marketdata-bhvaik\" && gambitsca remediate --repo /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik --finding \"c6b5e8-finding-gulpfile.js-196\" --validate --config /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/config.yaml"
+          },
+          "taxa": [
+            {
+              "toolComponent": {
+                "name": "CWE",
+                "guid": "b7c8d9e0-1f2a-3b4c-5d6e-7f8090a1b2c3"
+              },
+              "id": "CWE-78"
+            }
+          ],
+          "rank": 53.0
+        },
+        {
+          "ruleId": "CWE-532: Insertion of Sensitive Information into Log File",
+          "level": "warning",
+          "message": {
+            "text": "Sensitive Information in HTTP GET Request  [CVSS 6.5: CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/connection/snapshots/quotes/retrieveSnapshots.js"
+                },
+                "region": {
+                  "startLine": 86
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "https://github.com/logic-gambit/marketdata-bhvaik/blob/main/lib/connection/snapshots/quotes/retrieveSnapshots.js#L86"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "severity": "medium",
+            "security-severity": "6.5",
+            "cvssRating": "Medium",
+            "category": "CWE-532: Insertion of Sensitive Information into Log File",
+            "cvssVector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+            "cwe": "CWE-532 - Insertion of Sensitive Information into Log File",
+            "cweId": "CWE-532",
+            "cweName": "Insertion of Sensitive Information into Log File",
+            "cvssScore": 6.5,
+            "offensivePriority": "P3",
+            "offensivePriorityLabel": "Internal Network / Privileged Position",
+            "offensivePriorityReason": "Internal Network / Privileged Position | *AV:A (non-network)*",
+            "confidence": 0.9,
+            "description": "#### Description\nThe retrieveSnapshotsUsingGetQuote function constructs a URL with username and password in the GET request parameters. This is insecure because GET requests with sensitive data can be logged, cached, and viewed in browser history, compromising login credentials.\n\n#### Impact\nThe username and password are being sent via GET request parameters which can expose sensitive information in URLs. This can be seen by server logs, browser history, and other intermediaries.\n\n#### Exploit scenario\nAn attacker monitoring network traffic can intercept the HTTP GET requests and extract the username and password from the URL, leading to unauthorized access to account details.\n\n#### Preconditions\n- Network interception capability\n- User must initiate a snapshot retrieval\n\n```\nurl: `https://webapp-proxy.aws.barchart.com/v1/proxies/ondemand/getQuote.json?username=${encodeURIComponent(username)}&password=[REDACTED-SECRET]]]))}`,\n```\n\n#### How to fix\nUse POST requests for sending sensitive information via the HTTP request body. Modify the retrieveSnapshotsUsingGetQuote function to use a method that does not expose sensitive data in the URL.\n\n**Exploitability:** Sensitive information is at risk owing to improper management of credentials within HTTP request parameters, facilitating potential credential exposure.\n\n#### Adversarial verification\n**Verdict:** TRUE_POSITIVE (confidence: 10/10) \u2014 Sensitive data is clearly embedded in a GET request string, and this path appears to be reachable.\n\nThe `retrieveSnapshotsUsingGetQuote` function is clearly constructing a URL that includes the username and password as GET parameters in both `lib/connection/snapshots/quotes/retrieveSnapshots.js` and `example/browser/example.js`. This is consistent with the scanner's report of sensitive information being exposed via the URL in a GET request. Both occurrences of the function involve sending HTTP GET requests with credentials in the URL. \n\nSince the credentials are in the URL:\n- They can be logged by any intermediary between the client and the server.\n- They may be cached in browser history.\n- They could be seen in logs or analytics servers if endpoint traffic gets recorded.\n\n**Call Context Validation**\n- The function is part of the main logic path and is invoked in script files that are potentially reachable when the application is in use. Specifically, `example/browser/example.js` shows a logical implementation flow where user credentials could indeed be executed as part of an API request.\n\nThere are no observed defenses in place that would sanitize or protect these credentials from being exposed through intercepted HTTP traffic, browser history, or server logs.",
+            "findingId": "90363b-finding-lib/connection/snapshots/quotes/retrieveSnapshots.js-86",
+            "remediationCommand": "cd /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner && source /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/venv/bin/activate && export GAMBITSCA_SCAN_ID=\"2026-10-21T13:53:10Z__marketdata-bhvaik\" && gambitsca remediate --repo /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik --finding \"90363b-finding-lib/connection/snapshots/quotes/retrieveSnapshots.js-86\" --validate --config /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/config.yaml"
+          },
+          "taxa": [
+            {
+              "toolComponent": {
+                "name": "CWE",
+                "guid": "b7c8d9e0-1f2a-3b4c-5d6e-7f8090a1b2c3"
+              },
+              "id": "CWE-532"
+            }
+          ],
+          "rank": 65.0
+        },
+        {
+          "ruleId": "CWE-20: Improper Input Validation",
+          "level": "warning",
+          "message": {
+            "text": "Lack of XML attribute injection protection in parseMessage  [CVSS 6.5: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/utilities/parse/ddf/message.js"
+                },
+                "region": {
+                  "startLine": 64
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "https://github.com/logic-gambit/marketdata-bhvaik/blob/main/lib/utilities/parse/ddf/message.js#L64"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "severity": "medium",
+            "security-severity": "6.5",
+            "cvssRating": "Medium",
+            "category": "CWE-20: Improper Input Validation",
+            "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+            "cwe": "CWE-20 - Improper Input Validation",
+            "cweId": "CWE-20",
+            "cweName": "Improper Input Validation",
+            "cvssScore": 6.5,
+            "offensivePriority": "P3",
+            "offensivePriorityLabel": "Internal Network / Privileged Position",
+            "offensivePriorityReason": "Internal Network / Privileged Position | *exposure unverified \u2014 no CMDB context; AV:N (network-routable; internet exposure unconfirmed)*",
+            "confidence": 0.9,
+            "description": "#### Description\nThe code in the parseMessage function directly parses XML attributes into integers using parseInt, without proper validation of the input data (lines 64-68). If the XML data is controlled by an attacker, they could supply crafted attribute values to influence the application behavior unexpectedly.\n\n#### Impact\nAttacker-controlled XML attributes are parsed into integers without validation, potentially leading to incorrect application behavior if malformed attributes are provided.\n\n#### Exploit scenario\nAn attacker sends a crafted DDF XML message containing attributes with non-numeric values, which could cause parseInt to return NaN, disturbing further processing logic that expects an integer.\n\n#### Preconditions\n- Attacker has control over the XML input\n\n```\nmessage.bids.push({\n\t\"price\": parseValue(ary1[i], message.unitcode),\n\t\"size\": parseInt(ary2[i])\n});\n```\n\n#### How to fix\nEnsure input data from XML attributes is properly validated before using it. Implement checks for valid number formats before calling parseInt.\n\n**Exploitability:** Potential for XML Injection exists when processing messages, which could affect application integrity if misused.\n\n#### Adversarial verification\n**Verdict:** TRUE_POSITIVE (confidence: 9/10) \u2014 Direct WebSocket message handling permits untrusted XML input to lack validation, leaving partial exposure to crafted inputs.\n\nThe code in question is located in `lib/utilities/parse/ddf/message.js`, where XML attributes are parsed into integers using `parseInt`. The primary concern is that if the message XML can be controlled by an attacker, the resultant integer can be `NaN`, potentially leading to improper handling further in the code.\n\n**Verification Steps**\n\n1. **Function Location and Use**: \n   - The `parseMessage` function begins at line 18 in `lib/utilities/parse/ddf/message.js`.\n   - The critical block in question runs at lines 64-68, where `parseInt` is called directly on attributes without validation.\n   - Grepping results showed `parseMessage` is called across different components, including network-handling scripts and tests.\n\n2. **External Entry Points**:\n   - `parseMessage` is invoked in `scripts/replay/replay.js` via the `handleWebSocketMessage` function. The `ReplayWebSocket` initialization binds messages to `handleWebSocketMessage`, establishing a route where WebSocket messages could invoke `parseMessage`.\n\n3. **Data Flow**:\n   - In `handleWebSocketMessage`, incoming data could trigger the parsing action, albeit indirectly. This data path suggests that if unfiltered XML data is passed via WebSockets into the application, it might reach `parseMessage`.\n   \n4. **Validation and Defenses**:\n   - There is no observed validation before `parseInt` calls on the XML attributes (`askprices`, `asksizes`, `bidprices`, `bidsizes`).\n   - The pattern repeats without defensive coding practices or constraints to ensure only numeric values are parsed.\n\n**Conclusion**\nGiven the availability of a path from an external entry point through WebSocket messages to the `parseMessage` function without intervening data validation, the reported vulnerability claim holds true. The potential impact includes improper integer parsing from `NaN`, which could lead to logic errors or application malfunctions.",
+            "findingId": "079d69-finding-lib/utilities/parse/ddf/message.js-64",
+            "remediationCommand": "cd /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner && source /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/venv/bin/activate && export GAMBITSCA_SCAN_ID=\"2026-10-21T13:53:10Z__marketdata-bhvaik\" && gambitsca remediate --repo /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik --finding \"079d69-finding-lib/utilities/parse/ddf/message.js-64\" --validate --config /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/config.yaml"
+          },
+          "taxa": [
+            {
+              "toolComponent": {
+                "name": "CWE",
+                "guid": "b7c8d9e0-1f2a-3b4c-5d6e-7f8090a1b2c3"
+              },
+              "id": "CWE-20"
+            }
+          ],
+          "rank": 65.0
+        },
+        {
+          "ruleId": "other",
+          "level": "warning",
+          "message": {
+            "text": "Lack of username sanitization  [CVSS 4.3: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/connection/Connection.js"
+                },
+                "region": {
+                  "startLine": 264
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "https://github.com/logic-gambit/marketdata-bhvaik/blob/main/lib/connection/Connection.js#L264"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "severity": "medium",
+            "security-severity": "4.3",
+            "cvssRating": "Medium",
+            "category": "other",
+            "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+            "cvssScore": 4.3,
+            "offensivePriority": "P3",
+            "offensivePriorityLabel": "Internal Network / Privileged Position",
+            "offensivePriorityReason": "Internal Network / Privileged Position | *exposure unverified \u2014 no CMDB context; AV:N (network-routable; internet exposure unconfirmed)*",
+            "confidence": 0.7,
+            "description": "#### Description\nThe `connect` function accepts a username parameter and directly assigns it to the __loginInfo.username variable without sanitization or escaping. This happens in line 340 and could lead to issues if this username is logged or used in contexts where special characters have specific meanings.\n\n#### Impact\nAn attacker could inject unexpected characters or sequences in the username, potentially affecting logging or leading to further injection attacks in areas where the username is expected to be trusted.\n\n#### Exploit scenario\nAn attacker includes newline characters in the username, which when logged, could break the log format or be misused in subsequent layers if the username is used in a vulnerable operation.\n\n#### Preconditions\n- Attacker can control the username input during connection initiation\n\n```\nusername: null,\npassword: null,\n```\n\n#### How to fix\nSanitize the `username` input in the `connect` function by stripping or escaping characters that might affect logging or other operations.\n\n**Exploitability:** Unsanitized inputs in usernames may evolve into security gaps when interfacing with other components or logging.\n\n#### Adversarial verification\n**Verdict:** TRUE_POSITIVE (confidence: 8/10) \u2014 While immediate exploitation isn't evident, improper sanitization of an attacker-controllable field is a security concern.\n\nThe connect function does assign the username directly to the `__loginInfo.username` variable without additional sanitization or escaping. The call graph context provided was accurate in identifying this line. However, the concern is about how this value is used and if it leads to any exploitable vulnerability.\n\nUpon reviewing the source code, `connect` is indeed invoked in the following files under the described conditions:\n\n1. **File:** `example/browser/js/startup.js`\n   - Code: `connection.connect(hostname, username, password);`\n   - The username here is passed from an external caller. However, details of its origin/sanitization are not visible in the provided snippet.\n\n2. **File:** `example/node/example.js`\n   - Code: `connection.connect(host, username, password);`\n   - Similar invocation with no immediate evidence of preprocessing or sanitation.\n\n3. **File:** `scripts/replay/replay.js`\n   - Calls are indirect and do not affect username handling within the `Connection.js`.\n\nIn this exploration, there is no clear evidence of upstream sanitization or encoding done on the username before being passed to `connect`. This suggests that an attacker might control the `username` field, and this control may persist into `__loginInfo.username`.\n\nGiven the direct assignment of the username and the potential for misuse, especially if this username is logged or used further without sanitation, it is a matter of concern. However, the vector might not have a direct exploitable path without further investigation into logging or subsequent use. \n\n**Lack of an external entry point* that allows full end-to-end control (username passed directly from unauthenticated user flows into this function) would have strengthened the case for a true vulnerability. Still, from the security-best practices perspective, not escaping the `username` when it's potentially attacker-controlled is something worth addressing.\n\nSince the system's external entry points potentially involve network interactions and are not fully mapped out in this analysis, and there is some reachable path for exploitation, I'm leaning towards this being a potential risk rather than dismissing it outright.",
+            "findingId": "6aa309-other-lib/connection/Connection.js-264",
+            "remediationCommand": "cd /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner && source /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/venv/bin/activate && export GAMBITSCA_SCAN_ID=\"2026-10-21T13:53:10Z__marketdata-bhvaik\" && gambitsca remediate --repo /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik --finding \"6aa309-other-lib/connection/Connection.js-264\" --validate --config /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/config.yaml"
+          },
+          "rank": 43.0
+        },
+        {
+          "ruleId": "CWE-840: Business Logic Errors",
+          "level": "warning",
+          "message": {
+            "text": "Package Lock Disabled  [CVSS 4.2: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": ".npmrc"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "https://github.com/logic-gambit/marketdata-bhvaik/blob/main/.npmrc#L1"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "severity": "medium",
+            "security-severity": "4.2",
+            "cvssRating": "Medium",
+            "category": "CWE-840: Business Logic Errors",
+            "cvssVector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N",
+            "cwe": "CWE-840 - Business Logic Errors",
+            "cweId": "CWE-840",
+            "cweName": "Business Logic Errors",
+            "cvssScore": 4.2,
+            "offensivePriority": "P3",
+            "offensivePriorityLabel": "Internal Network / Privileged Position",
+            "offensivePriorityReason": "Internal Network / Privileged Position | *exposure unverified \u2014 no CMDB context; AV:N (network-routable; internet exposure unconfirmed)*",
+            "confidence": 0.8,
+            "description": "#### Description\nThe .npmrc configuration contains a directive 'package-lock=false' which disables the use of the package-lock.json file. This setting means that developers might not be using the same versions of dependencies, leading to potential exposure to vulnerabilities that might have been fixed in later versions.\n\n#### Impact\nDisabling the package-lock file can lead to inconsistent dependencies across different environments, which can introduce vulnerabilities if differing versions include unpatched security issues.\n\n#### Exploit scenario\nAn attacker leverages a vulnerability in a dependency's older version that was patched in a newer version, but due to the inconsistency of installed versions across environments, the patch is not applied everywhere.\n\n#### Preconditions\n- A dependency in use has an unpatched vulnerability in the older version that the application depends on.\n\n```\npackage-lock=false\n```\n\n#### How to fix\nEnable package-lock.json generation to ensure consistent dependency installation. Update the .npmrc file to remove or set 'package-lock=true'.\n\n**Exploitability:** (not ranked by chaining pass)\n\n#### Adversarial verification\n**Verdict:** TRUE_POSITIVE (confidence: 9/10) \u2014 Disabling the package-lock is a security risk in maintaining consistent and patched dependencies, but more indirect than exploitative in production code execution.\n\nThe `.npmrc` file indeed contains the directive `package-lock=false`. This setting disables the use of the `package-lock.json` file, which may lead to using inconsistent versions of dependencies across different environments.\n\nLet's analyze whether this configuration setting leads to a true security issue:\n\n1. **Code Verification**: The presence of `package-lock=false` in the `.npmrc` file is confirmed.\n2. **Exploit Plausibility**: With `package-lock=false`, developers and CI/CD pipelines may install different versions of dependencies if their `package.json` uses loose versioning (e.g., `^` or `~`). This can mean that recent patches applied to specific dependencies are not uniformly applied across all environments, possibly exposing some setups to known vulnerabilities.\n3. **Entry Point Validation**: The `package-lock=false` setting primarily impacts the dependency management process and not the runtime executable code directly accessed by external attackers. However, it indirectly impacts security by affecting which versions of dependencies are used.\n4. **Defences**: Though it is possible to manually verify and lock versions using an alternative approach, the absence of an explicit package-lock mechanism can make dependency management complex and error-prone.\n\nGiven these considerations, the logic flaw reported here is valid, but it's a configuration issue rather than direct vulnerability in executable code paths. Without the `package-lock.json` ensuring consistency, the risk primarily affects the development and build environments' ability to stay up-to-date with security patches in dependencies.",
+            "findingId": "8a7023-finding-.npmrc-1",
+            "remediationCommand": "cd /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner && source /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/venv/bin/activate && export GAMBITSCA_SCAN_ID=\"2026-10-21T13:53:10Z__marketdata-bhvaik\" && gambitsca remediate --repo /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik --finding \"8a7023-finding-.npmrc-1\" --validate --config /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/config.yaml"
+          },
+          "taxa": [
+            {
+              "toolComponent": {
+                "name": "CWE",
+                "guid": "b7c8d9e0-1f2a-3b4c-5d6e-7f8090a1b2c3"
+              },
+              "id": "CWE-840"
+            }
+          ],
+          "rank": 42.0
+        },
+        {
+          "ruleId": "CWE-295: Improper Certificate Validation",
+          "level": "warning",
+          "message": {
+            "text": "Client verification logic flaw  [CVSS 5.3: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "scripts/replay/common/ReplayWebSocket.js"
+                },
+                "region": {
+                  "startLine": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "https://github.com/logic-gambit/marketdata-bhvaik/blob/main/scripts/replay/common/ReplayWebSocket.js#L37"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "severity": "medium",
+            "security-severity": "5.3",
+            "cvssRating": "Medium",
+            "category": "CWE-295: Improper Certificate Validation",
+            "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+            "cwe": "CWE-295 - Improper Certificate Validation",
+            "cweId": "CWE-295",
+            "cweName": "Improper Certificate Validation",
+            "cvssScore": 5.3,
+            "offensivePriority": "P3",
+            "offensivePriorityLabel": "Internal Network / Privileged Position",
+            "offensivePriorityReason": "Internal Network / Privileged Position | *exposure unverified \u2014 no CMDB context; AV:N (network-routable; internet exposure unconfirmed)*",
+            "confidence": 0.9,
+            "description": "#### Description\nThe method 'verifyClient' does not correctly implement client verification, only checking the number of connected clients and not performing any actual client verification, thus any client can connect if maxConnections is not reached.\n\n#### Impact\nAn attacker can bypass client verification by exploiting the logic flaw in the verifyClient method, allowing unauthorized clients to connect to the WebSocket server.\n\n#### Exploit scenario\nAn attacker connects to the WebSocket server as an unauthorized client as long as the maximum number of connections hasn't been reached, potentially allowing access to market data streams.\n\n#### Preconditions\n- The number of connected clients is less than the maximum allowed connections.\n\n```\no.verifyClient = (ignore, done) => {\n    if (this._clients.length >= this._maxConnections) {\n        done(false, 401, `Market Data Replay Server only supports [ ${this._maxConnections} ] client(s).`);\n    } else {\n        done(true);\n    }\n};\n```\n\n#### How to fix\nImplement proper client verification in 'o.verifyClient' to ensure that only authorized clients are allowed to connect.\n\n**Exploitability:** (not ranked by chaining pass)\n\n#### Adversarial verification\n**Verdict:** TRUE_POSITIVE (confidence: 9/10) \u2014 lacks authorization checks, possible unauthorized connection.\n\nThe scanner's claim was that the `verifyClient` function in `ReplayWebSocket.js` only checks the number of connected clients and does not perform any authorization checks, thus allowing any client to connect if the maxConnections limit is not reached. From my analysis, the code in `ReplayWebSocket.js` indeed only restricts connections based on the number of clients (`this._clients.length`) against a maximum (`this._maxConnections`). There are no additional checks for client authorization or verification outside of counting connections.\n\nThe class `ReplayWebSocket` is instantiated in `scripts/replay/replay.js` at line 120 with a specific port and a message handler. It appears to be intended for handling connections to a WebSocket intended for \"market data replay,\" but there is no evidence of any other layer of authentication or authorization being applied within this context. The entry point in `replay.js` is unauthenticated, and without other mitigating controls visible in the snippet I reviewed, the application might indeed allow unauthorized WebSocket connections as long as connection limits aren't exceeded.\n\nTherefore, the scanner's finding is valid \u2014 this is a real flaw due to missing client authorization. This weakness could indeed allow an unauthorized client to connect to the WebSocket server inadvertently, under the conditions specified.",
+            "findingId": "128534-finding-scripts/replay/common/ReplayWebSocket.js-37",
+            "remediationCommand": "cd /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner && source /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/venv/bin/activate && export GAMBITSCA_SCAN_ID=\"2026-10-21T13:53:10Z__marketdata-bhvaik\" && gambitsca remediate --repo /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik --finding \"128534-finding-scripts/replay/common/ReplayWebSocket.js-37\" --validate --config /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/config.yaml"
+          },
+          "taxa": [
+            {
+              "toolComponent": {
+                "name": "CWE",
+                "guid": "b7c8d9e0-1f2a-3b4c-5d6e-7f8090a1b2c3"
+              },
+              "id": "CWE-295"
+            }
+          ],
+          "rank": 53.0
+        },
+        {
+          "ruleId": "CWE-362: Concurrent Execution using Shared Resource with Improper Synchronization (Race Condition)",
+          "level": "warning",
+          "message": {
+            "text": "Concurrent Reconnect Race Condition  [CVSS 4.8: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:L]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/connection/Connection.js"
+                },
+                "region": {
+                  "startLine": 268
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "https://github.com/logic-gambit/marketdata-bhvaik/blob/main/lib/connection/Connection.js#L268"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "severity": "medium",
+            "security-severity": "4.8",
+            "cvssRating": "Medium",
+            "category": "CWE-362: Concurrent Execution using Shared Resource with Improper Synchronization (Race Condition)",
+            "cvssVector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:L",
+            "cwe": "CWE-362 - Concurrent Execution using Shared Resource with Improper Synchronization (Race Condition)",
+            "cweId": "CWE-362",
+            "cweName": "Concurrent Execution using Shared Resource with Improper Synchronization (Race Condition)",
+            "cvssScore": 4.8,
+            "offensivePriority": "P3",
+            "offensivePriorityLabel": "Internal Network / Privileged Position",
+            "offensivePriorityReason": "Internal Network / Privileged Position | *exposure unverified \u2014 no CMDB context; AV:N (network-routable; internet exposure unconfirmed)*",
+            "confidence": 0.85,
+            "description": "#### Description\nWithin `function connect`, after setting the `__connectionCount` and logging the connection attempt, there is no effective locking or check to ensure it's the only active connection attempt finishing. This results in a potential race condition when the `onclose` event could trigger a reconnect task that races with another simultaneous connect attempt.\n\n#### Impact\nAn attacker could exploit the race condition during the reconnect process to create unexpected connection states, potentially causing repeated resource consumption or service anomalies.\n\n#### Exploit scenario\nAn attacker could send a series of quick connection failures, causing the system to attempt reconnection faster than anticipated. If multiple `connect` processes start concurrently, the internal state may become inconsistent, leading to multiple resource-intensive connection attempts.\n\n#### Preconditions\n- Attacker must be able to trigger rapid connection state changes.\n\n```\nfunction connect\n```\n\n#### How to fix\nEnsure atomic updates and the presence of a lock on shared resources to prevent concurrent execution of reconnect tasks.\n\n**Exploitability:** (not ranked by chaining pass)\n\n#### Adversarial verification\n**Verdict:** TRUE_POSITIVE (confidence: 9/10) \u2014 The lack of a mutual exclusion mechanism in the `connect` function confirms the potential race condition.\n\nThe `connect` function in \"lib/connection/Connection.js\" indeed lacks any explicit locking mechanism or check to ensure exclusivity in connection attempt completions, as suggested by the scanner. This omission implies a potential race condition which aligns with the scanner's description.\n\nHere is the essential part of the code to verify the claim:\n- The `connect` function sets `__connectionCount` at line 290 and logs the start of a connection attempt.\n- Conditions and states are then configured, and a connection attempt is made.\n- Upon connection closure, the `onclose` event resets the connection state without any locking or checks to manage concurrent connections.\n\n**Investigation Steps:**\n- Verified that `connect` sets `__connectionCount` and performs logging. There is no locking before setting or further checks within the function (`lines 290-292`).\n- Verified that `onclose` event resetting (`lines 359-369`) can trigger concurrent reconnect tasks if the `connect` function is invoked multiple times rapidly without any mechanism to manage concurrency.\n\nNo upstream defenses or mechanisms were found that prevent these multiple, potentially overlapping connection attempts due to the race condition.\n\n**Impact Analysis:**\nAn attacker, under circumstances where they can cause rapid connection failures, could exploit this behavior to create numerous connection attempts, potentially leading to resource exhaustion or other undefined behavior due to inconsistent internal state.",
+            "findingId": "743cd8-finding-lib/connection/Connection.js-268",
+            "remediationCommand": "cd /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner && source /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/venv/bin/activate && export GAMBITSCA_SCAN_ID=\"2026-10-21T13:53:10Z__marketdata-bhvaik\" && gambitsca remediate --repo /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik --finding \"743cd8-finding-lib/connection/Connection.js-268\" --validate --config /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/config.yaml"
+          },
+          "taxa": [
+            {
+              "toolComponent": {
+                "name": "CWE",
+                "guid": "b7c8d9e0-1f2a-3b4c-5d6e-7f8090a1b2c3"
+              },
+              "id": "CWE-362"
+            }
+          ],
+          "rank": 48.0
+        },
+        {
+          "ruleId": "CWE-362: Concurrent Execution using Shared Resource with Improper Synchronization (Race Condition)",
+          "level": "warning",
+          "message": {
+            "text": "Inconsistent Check-then-Act for Clean Working Directory  [CVSS 5.3: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:L]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "gulpfile.js"
+                },
+                "region": {
+                  "startLine": 30
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "https://github.com/logic-gambit/marketdata-bhvaik/blob/main/gulpfile.js#L30"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "severity": "medium",
+            "security-severity": "5.3",
+            "cvssRating": "Medium",
+            "category": "CWE-362: Concurrent Execution using Shared Resource with Improper Synchronization (Race Condition)",
+            "cvssVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:L",
+            "cwe": "CWE-362 - Concurrent Execution using Shared Resource with Improper Synchronization (Race Condition)",
+            "cweId": "CWE-362",
+            "cweName": "Concurrent Execution using Shared Resource with Improper Synchronization (Race Condition)",
+            "cvssScore": 5.3,
+            "offensivePriority": "P3",
+            "offensivePriorityLabel": "Internal Network / Privileged Position",
+            "offensivePriorityReason": "Internal Network / Privileged Position | *AV:L (non-network)*",
+            "confidence": 0.9,
+            "description": "#### Description\nThe task 'ensure-clean-working-directory' checks if the Git working directory is clean before proceeding, but this check could become outdated if concurrent modifications occur. Another process could modify or stage files after the check but before any subsequent crucial operation.\n\n#### Impact\nAn inconsistent check for a clean working directory could lead to unexpected behavior in concurrent operations, such as deploying a partially complete version of the code.\n\n#### Exploit scenario\nIf a developer runs multiple tasks/scripts concurrently, one of them might modify the working directory state after this check passes, leading another task to assume the directory is clean and proceed with operations like version bumping or deployments, resulting in an inconsistent or corrupted state.\n\n#### Preconditions\n- Attacker has access to run concurrent tasks or scripts that can modify git status.\n\n```\ngitStatus((err, status) => {\n  if (err, !status.clean) {\n    throw new Error('Unable to proceed, your working directory is not clean.');\n  }\n  cb();\n});\n```\n\n#### How to fix\nRe-evaluate the necessity of this check or employ mechanisms to lock the working directory state during important sequential operations (e.g., leveraging transactional or atomic operations). Specifically, acquire a lock before the check and release it after the dependent operations in the 'ensure-clean-working-directory' task.\n\n**Exploitability:** (not ranked by chaining pass)\n\n#### Adversarial verification\n**Verdict:** TRUE_POSITIVE (confidence: 9/10) \u2014 Potential for race condition due to concurrent task execution is valid.\n\nThe code in `gulpfile.js` involves a task `'ensure-clean-working-directory'` which checks whether the current git working directory is clean before proceeding. The core of the task is using the `git-get-status` library to determine the cleanliness of the working directory:\n\n```javascript\ngitStatus((err, status) => {\n  if (err, !status.clean) {\n    throw new Error('Unable to proceed, your working directory is not clean.');\n  }\n  cb();\n});\n```\n\nThis task does correctly check for a clean working directory using the `git-get-status` library. However, the finding pertains to a potential race condition where the working directory could be modified after the check but before any crucial operation, like version bumping, takes place if concurrent operations occur. This could lead to an inconsistent state, as the subsequent operations would assume the directory is still clean.\n\nTo validate whether this could actually happen, the following was observed:\n1. The `gulp.task('ensure-clean-working-directory',...)` simply checks the git status and invokes the callback if no errors are present and the status is clean.\n2. There is no locking or other mechanisms to prevent race conditions where the directory might change after the check.\n3. The tasks in `gulpfile.js` are managed by gulp, which has no inherent mutex mechanism to prevent race conditions when the tasks are run concurrently.\n4. The repository's entry points and usages indicate the system can be network-accessible and potentially leveraged concurrently.\n\nGiven that:\n- Tasks can be run concurrently due to the nature of how gulp tasks operate.\n- No mechanism exists in the script to prevent modifications between the check and subsequent tasks.\n- The risk of tasks operating under false assumptions about working directory state is real and could lead to inconsistent deployments.\n\nThe description is accurate, and the finding can indeed lead to tangible problems if not corrected (e.g., by employing locks or ensuring serialized task execution).",
+            "findingId": "b848db-finding-gulpfile.js-30",
+            "remediationCommand": "cd /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner && source /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/venv/bin/activate && export GAMBITSCA_SCAN_ID=\"2026-10-21T13:53:10Z__marketdata-bhvaik\" && gambitsca remediate --repo /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik --finding \"b848db-finding-gulpfile.js-30\" --validate --config /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/config.yaml"
+          },
+          "taxa": [
+            {
+              "toolComponent": {
+                "name": "CWE",
+                "guid": "b7c8d9e0-1f2a-3b4c-5d6e-7f8090a1b2c3"
+              },
+              "id": "CWE-362"
+            }
+          ],
+          "rank": 53.0
+        },
+        {
+          "ruleId": "CWE-522: Insufficiently Protected Credentials",
+          "level": "note",
+          "message": {
+            "text": "Insecure WebSocket Connection  [CVSS 3.8: CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:N]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/connection/Connection.js"
+                },
+                "region": {
+                  "startLine": 156
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "https://github.com/logic-gambit/marketdata-bhvaik/blob/main/lib/connection/Connection.js#L156"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "severity": "low",
+            "security-severity": "3.8",
+            "cvssRating": "Low",
+            "category": "CWE-522: Insufficiently Protected Credentials",
+            "cvssVector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:N",
+            "cwe": "CWE-522 - Insufficiently Protected Credentials",
+            "cweId": "CWE-522",
+            "cweName": "Insufficiently Protected Credentials",
+            "cvssScore": 3.8,
+            "offensivePriority": "P3",
+            "offensivePriorityLabel": "Internal Network / Privileged Position",
+            "offensivePriorityReason": "Internal Network / Privileged Position | *internal-network position required; PR:H - high-privilege auth required*",
+            "confidence": 0.85,
+            "description": "#### Description\nIn `connect`, when the hostname is 'localhost', the code defaults to using an unsecured 'ws' protocol rather than a secure 'wss' for WebSocket connections, even if the environment allows for it. This decision can potentially expose the connection to network interception attacks.\n\n#### Impact\nUsing unsecured WebSocket connections can expose sensitive data to man-in-the-middle attacks over public networks.\n\n#### Exploit scenario\nIf a developer mistakenly sets the hostname to 'localhost' but deploys in a less secure environment, the market data exchanges can be intercepted and manipulated.\n\n#### Preconditions\n- Misconfiguration leading to 'localhost' deployment in insecure networks\n\n```\nif (hostname === 'localhost') { protocol = 'ws'; host = 'localhost'; port = 8080; }\n```\n\n#### How to fix\nUse 'wss' protocol for all WebSocket connections by default, unless the environment is known to be secure.\n\n**Exploitability:** Insecure WebSocket connections could lead to interception of data under certain configurations.\n\n#### Adversarial verification\n**Verdict:** TRUE_POSITIVE (confidence: 9/10) \u2014 The risk is real under misconfiguration; no upstream mitigations or validations are evident.\n\nThe insecure WebSocket connection reported in the source code occurs when setting the `hostname` as 'localhost'. In this case, the code defaults to using the 'ws' protocol, which is unsecured. The relevant lines in the `connect` function, located in `lib/connection/Connection.js`, are:\n\n```javascript\nif (hostname === 'localhost') {\n    protocol = 'ws';\n    host = 'localhost';\n    port = 8080;\n} else {\n    const match = hostname.match(regex.hostname);\n\n    if (match !== null && match[1]) {\n        protocol = match[1];\n    } else {\n        protocol = 'wss';\n```\n\nAfter examining the call graph context, including known callers such as `example/browser/js/startup.js` and `example/node/example.js`, and verifying against the actual file, it is clear that a misconfiguration could allow deployment in an insecure environment, leading to potential WebSocket communication interception.\n\n**Verification Findings:**\n\n- Valid call graph confirmed, with actual extraction from `lib/connection/Connection.js`.\n- No observed protective mechanisms in place that force a switch to 'wss' where applicable in production environments.\n- The control flow allows these configurations, making an insecure WebSocket connection feasible if relied on inappropriately.\n\nGiven the reachable external entry points and the absence of environmental checks or enforcement within the code itself:",
+            "findingId": "1e3888-finding-lib/connection/Connection.js-156",
+            "remediationCommand": "cd /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner && source /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/venv/bin/activate && export GAMBITSCA_SCAN_ID=\"2026-10-21T13:53:10Z__marketdata-bhvaik\" && gambitsca remediate --repo /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik --finding \"1e3888-finding-lib/connection/Connection.js-156\" --validate --config /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/config.yaml"
+          },
+          "taxa": [
+            {
+              "toolComponent": {
+                "name": "CWE",
+                "guid": "b7c8d9e0-1f2a-3b4c-5d6e-7f8090a1b2c3"
+              },
+              "id": "CWE-522"
+            }
+          ],
+          "rank": 38.0
+        },
+        {
+          "ruleId": "CWE-79: Improper Neutralization of Input During Web Page Generation (Cross-site Scripting)",
+          "level": "note",
+          "message": {
+            "text": "Argv-derived input used in WebSocket connection setup unauthenticated  [CVSS 3.6: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N]"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "scripts/capture/capture.js"
+                },
+                "region": {
+                  "startLine": 46
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "https://github.com/logic-gambit/marketdata-bhvaik/blob/main/scripts/capture/capture.js#L46"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "severity": "low",
+            "security-severity": "3.6",
+            "cvssRating": "Low",
+            "category": "CWE-79: Improper Neutralization of Input During Web Page Generation (Cross-site Scripting)",
+            "cvssVector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N",
+            "cwe": "CWE-79 - Improper Neutralization of Input During Web Page Generation (Cross-site Scripting)",
+            "cweId": "CWE-79",
+            "cweName": "Improper Neutralization of Input During Web Page Generation (Cross-site Scripting)",
+            "cvssScore": 3.6,
+            "offensivePriority": "P3",
+            "offensivePriorityLabel": "Internal Network / Privileged Position",
+            "offensivePriorityReason": "Internal Network / Privileged Position | *AV:L (non-network)*",
+            "confidence": 0.9,
+            "description": "#### Description\nThe script retrieves the hostname, username, and symbols directly from process.argv without any input validation. These parameters are then used to establish a WebSocket connection using the Connection.connect() method. If an attacker controls these argument values, they could direct the connection to a malicious server or use credentials that the attacker provides.\n\n#### Impact\nAn attacker who can influence process arguments could initiate connections with malicious endpoints.\n\n#### Exploit scenario\nAn attacker deploys the script on a machine they control and provides a malicious hostname argument. The script establishes a WebSocket connection to the attacker's server, allowing them to capture or manipulate data sent by the script.\n\n#### Preconditions\n- Attacker has the ability to provide process arguments to the script.\n\n```\nconst host = process.argv[2];\nconst username = process.argv[3];\nconst password = [REDACTED-SECRET];\nconst symbols = process.argv[5];\n```\n\n#### How to fix\nAdd input validation for process arguments (hostname, username) at scripts/capture/capture.js:46-49 to ensure they are within expected bounds/format before usage.\n\n**Exploitability:** (not ranked by chaining pass)\n\n#### Adversarial verification\n**Verdict:** TRUE_POSITIVE (confidence: 8/10) \u2014 The finding can result in a potential security risk if an attacker can control the script's execution environment.\n\n**Analysis**\n\nThe script `capture.js` uses command-line arguments from `process.argv` to set up a WebSocket connection. These arguments are directly assigned to variables `host`, `username`, `password`, and `symbols`, which are then used to instantiate a connection object and eventually call the `Connection.connect()` method with these parameters as inputs.\n\n**Call Chain Analysis:**\n\n1. **Input Assignment (capture.js)**:\n   ```js\n   const host = process.argv[2];\n   const username = process.argv[3];\n   const password = [REDACTED-SECRET];\n   const symbols = process.argv[5];\n   ```\n   These inputs are taken directly from command-line arguments without validation.\n\n2. **Connect Method Invocation (capture.js)**:\n   ```js\n   connection.connect(host, username, password, adapterFactory);\n   ```\n\n3. **Connect Function (Connection.js)**:\n   - The function `connect(hostname, username, password, jwtProvider)` is responsible for setting up a connection.\n   - It checks if username and password are provided, unless a JWT provider is available.\n   - The `hostname` argument is expected to be a string and is parsed to determine the protocol, host, and port.\n\n**Possible Risks:**\n- If an attacker controls the command-line arguments, they could manipulate the `host` to redirect connections to a malicious server. This redirection could expose sensitive data sent over the WebSocket.\n- There is no input validation or sanitation on these arguments, which elevates the risk of injection attacks.\n\n**Preconditions**\n- The attacker must have the ability to execute this script with manipulated `process.argv` values, which implies local or adjacent access.\n\n**Defenses and Mitigations**\n- Currently, the script does not include validation or sanitation checks on the `argv` input, making it vulnerable if run in an environment where an attacker can influence these inputs.\n- The entry point for usage appears limited to local execution without additional context indicating remote operability.\n\n**Conclusion**\nGiven the lack of validation and the potential for an attacker with sufficient access to manipulate the WebSocket connection setup, this finding represents a real risk when executed under such conditions.",
+            "findingId": "d1cca8-finding-scripts/capture/capture.js-46",
+            "remediationCommand": "cd /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner && source /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/venv/bin/activate && export GAMBITSCA_SCAN_ID=\"2026-10-21T13:53:10Z__marketdata-bhvaik\" && gambitsca remediate --repo /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/batch-workspace/marketdata-bhvaik --finding \"d1cca8-finding-scripts/capture/capture.js-46\" --validate --config /Users/bhavikpanchal/Desktop/orgScanTest/GambitScanner/config.yaml"
+          },
+          "taxa": [
+            {
+              "toolComponent": {
+                "name": "CWE",
+                "guid": "b7c8d9e0-1f2a-3b4c-5d6e-7f8090a1b2c3"
+              },
+              "id": "CWE-79"
+            }
+          ],
+          "rank": 36.0
+        }
+      ],
+      "versionControlProvenance": [
+        {
+          "repositoryUri": "https://github.com/logic-gambit/marketdata-bhvaik",
+          "mappedTo": {
+            "uriBaseId": "%SRCROOT%"
+          },
+          "revisionId": "main"
+        }
+      ],
+      "invocations": [
+        {
+          "executionSuccessful": true,
+          "toolExecutionNotifications": [
+            {
+              "level": "warning",
+              "message": {
+                "text": "s4: 4 recoverable error(s) logged"
+              }
+            },
+            {
+              "level": "warning",
+              "message": {
+                "text": "s6-verify: 1 recoverable error(s) logged"
+              }
+            },
+            {
+              "level": "warning",
+              "message": {
+                "text": "2 deep-dive chunk(s) failed or timed out; their findings are absent"
+              }
+            }
+          ],
+          "startTimeUtc": "2026-10-21T13:53:10Z",
+          "endTimeUtc": "2026-10-21T13:55:57Z"
+        }
+      ]
+    }
+  ]
+}
