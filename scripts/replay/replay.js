@@ -16,7 +16,7 @@ const ReplayFileReader = require('./common/ReplayFileReader'),
 	}
 
 	const handleWebSocketMessage = (ws, message) => {
-		console.log(`Message received: [ ${message.replace('\r\n', '')} ]`);
+		console.log(`Message received: [ ${message.replace(/[\r\n]/g, '')} ]`);
 
 		const matches = /(.[^\s]*)(?:$|[\s|$](.*))/gm.exec(message);
 
@@ -28,16 +28,25 @@ const ReplayFileReader = require('./common/ReplayFileReader'),
 
 		switch (type) {
 			case 'LOAD': {
+				const path = require('path');
+
 				let filename = matches[2] || null;
 
 				if (filename) {
-					filename = filename.replace(/(\.{2}|\/|\\)/g, '');  // Remove ../ and path separators
-				}
+					const sanitizedPath = path.join('./logs', filename);
+					const resolvedPath = path.resolve(sanitizedPath);
 
+					// Ensure the final path is within the logs directory
+					const logsDirectory = path.resolve('./logs');
+					if (!resolvedPath.startsWith(logsDirectory)) {
+						throw new Error('Path traversal detected');
+					}
+
+					fileReader = ReplayFileReader.for(resolvedPath);
+				}
 				console.log(`Command [ ${type} ], operand [ ${filename} ]`);
 
 				try {
-					fileReader = ReplayFileReader.for(`./logs/${filename}`);
 				} catch (e) {
 					console.log(`Unable to load file [ ./logs/${filename} ]`, e);
 				}
@@ -60,15 +69,16 @@ const ReplayFileReader = require('./common/ReplayFileReader'),
 				break;
 			}
 			case 'SCROLL': {
-				if (fileReader === null) {
-					return;
-				}
+				fileReaderLock.runExclusive(() => {
+					if (fileReader === null) {
+						return;
+					}
 
-				const to = parseInt(matches[2]);
+					const to = parseInt(matches[2]);
 
-				if (is.nan(to) || !is.integer(to)) {
-					return;
-				}
+					if (is.nan(to) || !is.integer(to)) {
+						return;
+					}
 
 				console.log(`Command [ ${type} ], operand [ ${to} ]`);
 
