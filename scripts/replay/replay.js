@@ -110,7 +110,8 @@ const ReplayFileReader = require('./common/ReplayFileReader'),
 
 					heartbeatInterval = setInterval(() => {
 						/* jshint -W113 */
-						ws.send(toBuffer('#20210601134557'));
+						const currentTimestamp = new Date().toISOString().replace(/[-:.TZ]/g, '');
+ws.send(toBuffer(`#${currentTimestamp}`));
 						/* jshint +W106 */
 					}, 3000);
 				}
