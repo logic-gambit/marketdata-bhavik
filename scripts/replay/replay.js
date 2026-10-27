@@ -30,8 +30,12 @@ const ReplayFileReader = require('./common/ReplayFileReader'),
 			case 'LOAD': {
 				let filename = matches[2] || null;
 
-				if (filename) {
-					filename = filename.replace(/(\.{2}|\/|\\)/g, '');  // Remove ../ and path separators
+				// Allow filenames with only alphanumeric characters and dashes
+				if (filename && /^[a-zA-Z0-9\-]+$/.test(filename)) {
+					console.log(`Safe filename: ${filename}`);
+				} else {
+					console.log(`Invalid filename attempted: ${filename}`);
+					return;
 				}
 
 				console.log(`Command [ ${type} ], operand [ ${filename} ]`);
